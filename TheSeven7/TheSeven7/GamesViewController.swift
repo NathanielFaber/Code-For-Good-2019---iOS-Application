@@ -1,24 +1,25 @@
 //
-//  TwitterViewController.swift
+//  GamesViewController.swift
 //  TheSeven7
 //
-//  Created by Sravya Patakota on 9/21/19.
+//  Created by Nick Pappas on 9/21/19.
 //  Copyright © 2019 Ayline Villegas . All rights reserved.
 //
 
 import UIKit
-import WebKit
 
-class TwitterViewController: UIViewController {
+class GamesViewController: UIViewController {
 
     @IBOutlet weak var webView: UIWebView!
+    
+    var urlString = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let url = URL(string:"https://twitter.com/chicagochildren")
+
+        let url = URL(string:urlString)
         let request = URLRequest(url: url!)
         webView.loadRequest(request)
-
         // Do any additional setup after loading the view.
     }
     

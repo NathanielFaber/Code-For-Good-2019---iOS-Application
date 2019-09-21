@@ -1,23 +1,23 @@
 //
-//  TwitterViewController.swift
+//  CorndogsViewController.swift
 //  TheSeven7
 //
-//  Created by Sravya Patakota on 9/21/19.
+//  Created by Ayline Villegas  on 9/21/19.
 //  Copyright © 2019 Ayline Villegas . All rights reserved.
 //
 
 import UIKit
 import WebKit
 
-class TwitterViewController: UIViewController {
+class CorndogsViewController: UIViewController {
 
     @IBOutlet weak var webView: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let url = URL(string:"https://twitter.com/chicagochildren")
+        let url = URL(string:"www.corndog.io")
         let request = URLRequest(url: url!)
         webView.loadRequest(request)
+
 
         // Do any additional setup after loading the view.
     }
