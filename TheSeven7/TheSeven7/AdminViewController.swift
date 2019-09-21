@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import NotificationBannerSwift
 
 class AdminViewController: UIViewController, UITextFieldDelegate {
 
@@ -26,6 +27,8 @@ class AdminViewController: UIViewController, UITextFieldDelegate {
         let defaults = UserDefaults.standard
         defaults.set(parentPasswordTextField.text, forKey: "parentPassword")
         parentPasswordTextField.placeholder = parentPasswordTextField.text
+        let banner = NotificationBanner(title: "Parent Password Updated", subtitle: nil, style: .success)
+        banner.show()
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
