@@ -3,9 +3,6 @@ from games_manager import GameManager
 from password_manager import PasswordManager
 from referrals_manager import ReferralManager
 from flask import Flask, jsonify, redirect
-import json
-import time
-import os
 
 app = Flask(__name__)
 
