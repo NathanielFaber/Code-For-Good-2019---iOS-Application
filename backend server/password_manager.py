@@ -7,7 +7,6 @@ PASSW = "password"
 PASSW_TIMEOFCHANGE = "timeofchange"
 PASSW_TIMEDIFF = "timediff"
 
-
 jsonUtils = JUtil()
 
 class PasswordManager:
