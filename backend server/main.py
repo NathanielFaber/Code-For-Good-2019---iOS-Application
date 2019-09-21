@@ -1,7 +1,10 @@
 from flask import Flask, jsonify
 import json
 import time
+import json_utils
 app = Flask(__name__)
+
+jsonUtils = json_utils
 
 REFERRALS  = "referral-links.json"
 REFERRAL_URL = "url"
