@@ -364,7 +364,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1120"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vcC-gP-ede" customClass="HoshiTextField" customModule="TextFieldEffects">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" placeholder="x" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vcC-gP-ede" customClass="HoshiTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="200" y="487.5" width="434" height="145"/>
                                 <color key="backgroundColor" red="0.6588235294" green="0.76470588240000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -373,7 +373,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="120"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert" returnKeyType="continue" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert" returnKeyType="go" secureTextEntry="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
                                         <color key="value" red="0.73238753190000005" green="0.37912556949999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
