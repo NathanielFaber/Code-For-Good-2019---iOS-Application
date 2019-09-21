@@ -2,7 +2,7 @@ from json_utils import JUtil
 from games_manager import GameManager
 from password_manager import PasswordManager
 from referrals_manager import ReferralManager
-from flask import Flask, jsonify, redirect
+from flask import Flask, jsonify, redirect, render_template
 
 app = Flask(__name__)
 
