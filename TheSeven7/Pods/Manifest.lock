@@ -1,20 +1,32 @@
 PODS:
+  - MarqueeLabel/Swift (3.2.1)
+  - NotificationBannerSwift (2.0.1):
+    - MarqueeLabel/Swift (~> 3.2.0)
+    - SnapKit (~> 4.2.0)
   - PMSuperButton (3.0.1)
+  - SnapKit (4.2.0)
   - TextFieldEffects (1.5.1)
 
 DEPENDENCIES:
+  - NotificationBannerSwift
   - PMSuperButton
   - TextFieldEffects
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - MarqueeLabel
+    - NotificationBannerSwift
     - PMSuperButton
+    - SnapKit
     - TextFieldEffects
 
 SPEC CHECKSUMS:
+  MarqueeLabel: 2daf039bf916937c8a4c9adfc13577cc5e51b4ce
+  NotificationBannerSwift: 007774aa590cc9680647b92b2f217bef5c00c32c
   PMSuperButton: 2bef6f8659a5df969a69887f496ef309480c65eb
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   TextFieldEffects: 7d372f58aeaf9acd9626bbf962680aef926b085d
 
-PODFILE CHECKSUM: c9014500584ec79b0797b3bd844a1bdac8c07f67
+PODFILE CHECKSUM: 77c94a6c31dec866c37d8baa3b6102de79529be5
 
 COCOAPODS: 1.6.0
