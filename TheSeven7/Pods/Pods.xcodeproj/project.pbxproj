@@ -7,60 +7,90 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DA7AAAAB6240347A03F4B15EB69BE28 /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A218401E6014D49F3A475E836D0B6C /* IsaoTextField.swift */; };
 		0DD3192276E3BED289659DE9458826C0 /* Pods-TheSeven7UITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1124E9B7D228623DE9A205A5D1A180C3 /* Pods-TheSeven7UITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1096E1C8B0D13912861CD2251269BEC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		1A710EFD7BAA5D390B0C00C1376091CF /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F3E7EA932B2948068332475E6E28EC /* JiroTextField.swift */; };
+		21460B62A4F4AD118B503ED38EA95B85 /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAA1110D6E26BB244816F51ED8B529B /* MinoruTextField.swift */; };
+		2C56FAA4A2850990B3BD9FA11E62B0D4 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B1FBDD0E73A8AA616B9F4CA1E40C06 /* HoshiTextField.swift */; };
 		2F52EA67E6143B063861D693ED17F5DC /* Pods-TheSeven7Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 760C577ADFD2909AC8E920A34A99BFF7 /* Pods-TheSeven7Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		311EC6D26B61F019942D593CD34E8DBC /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C980E4149C1D8E8DDB10FED0E851A6 /* TextFieldEffects.swift */; };
 		342BE927019213ADD549674910F2013A /* Pods-TheSeven7UITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB98AACC5A25F56C184810B28AD5018 /* Pods-TheSeven7UITests-dummy.m */; };
-		5A3161AC58C061875B9010A1842E7EB3 /* PMSuperButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B389AFE495301237CFEA6FA2A1CE88A /* PMSuperButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		61BD83D57E0CBCDFC08E590A85FC0A29 /* Pods-TheSeven7-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F5ECC81EDE9867D5C7CE0977723FFF /* Pods-TheSeven7-dummy.m */; };
+		410392493B4D415D8945DDAE5DAF01D1 /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E22AE6685CD3C30EEA7AAA8AA4F16FB /* YoshikoTextField.swift */; };
+		4FCAA4BBF7018D1AA329A6C566AAEADE /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0698BE1137880B6680C8616F3F28F345 /* AkiraTextField.swift */; };
+		5A3161AC58C061875B9010A1842E7EB3 /* PMSuperButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED9AF237B9F5D3149B093984EE12FF3E /* PMSuperButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62F7AC33F41534B69C00F84CAF755B81 /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B46F2064E9B3EC45B91CE44DB2B90A /* YokoTextField.swift */; };
 		6A192F820F67470599E590B0D67C8290 /* Pods-TheSeven7Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3F7D8341038A6355DD32B7978ADBEC /* Pods-TheSeven7Tests-dummy.m */; };
-		856A77ABEC6698C52732B7395B3460EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		98343692A6449ED49DEE1579C503F5E6 /* PMSuperButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C1194A4D91B1CECF26ED17E218160FC9 /* PMSuperButton-dummy.m */; };
-		A9432E212B36A5E52A1B55AA7336D274 /* PMSuperButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423C1B69E35CAFEA15361B6726551907 /* PMSuperButton.swift */; };
+		92382EC75E547A95F4904E9DE731910E /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADDB84577F7F93D862B09A85FB26930 /* KaedeTextField.swift */; };
+		98343692A6449ED49DEE1579C503F5E6 /* PMSuperButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE2927427F1E0872CD66E73DC5D0C77 /* PMSuperButton-dummy.m */; };
+		9FFB49AB0A5AF93A90067B926975BD70 /* Pods-TheSeven7-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 121B8EF2C143BF219186594A7E2EF96C /* Pods-TheSeven7-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9432E212B36A5E52A1B55AA7336D274 /* PMSuperButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F0F97DB890783D5B260A4AEA44A774 /* PMSuperButton.swift */; };
+		B097C90341FDB7BD60B0C68587198A42 /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207038FB618BA8191C2A1BC936A325AD /* MadokaTextField.swift */; };
+		C8D494607D3DF50C223BD156CA771BE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		CF6AA269299EF052282F692328D250B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		D39614D060B80C9C51AF80FD6BD0BBAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		D7DCB61CDAAA69F49766DCBE80991741 /* Pods-TheSeven7-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F5ECC81EDE9867D5C7CE0977723FFF /* Pods-TheSeven7-dummy.m */; };
+		E05DD46DD89AD28E158B40FB4D576058 /* TextFieldEffects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D99695957B6A274A5574E3C733F6E88D /* TextFieldEffects-dummy.m */; };
+		E392E5208CD82EB13F48699B1A1D1D8D /* TextFieldEffects-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 570C7BD7C238740839A0AC1FAC71285A /* TextFieldEffects-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB1197FEAD49B655473C3B03EC659488 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		FE1B4DEF35470FA0EF7546A9E6E84B8F /* Pods-TheSeven7-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 121B8EF2C143BF219186594A7E2EF96C /* Pods-TheSeven7-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		91EBB4C2C73B50E252FA0E6EB34EBC27 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A2755BCEBF01B31D70047F96901AEF39;
-			remoteInfo = "Pods-TheSeven7";
-		};
-		A9DA3029648111FF02C59D151E66C22A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A2755BCEBF01B31D70047F96901AEF39;
-			remoteInfo = "Pods-TheSeven7";
-		};
-		C0DAAA3FD62EB27A44D87D20D3A44E62 /* PBXContainerItemProxy */ = {
+		83D08078E64143C2DA6B21FC98B13892 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1411A9EC45DCD3CA5346FD0030C57560;
 			remoteInfo = PMSuperButton;
 		};
+		91EBB4C2C73B50E252FA0E6EB34EBC27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72C3AEA02EEA612587AA238181FA3BE6;
+			remoteInfo = "Pods-TheSeven7";
+		};
+		A9DA3029648111FF02C59D151E66C22A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72C3AEA02EEA612587AA238181FA3BE6;
+			remoteInfo = "Pods-TheSeven7";
+		};
+		B094D41AB6DB7B242E85523EC71180C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76A956D55B3D1A4C9AF386C988E60737;
+			remoteInfo = TextFieldEffects;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00503682506A5D42007A82F7B0E86E7B /* PMSuperButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PMSuperButton-prefix.pch"; sourceTree = "<group>"; };
-		01E316F0017A1182C527383C3EA9C880 /* Pods_TheSeven7UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TheSeven7UITests.framework; path = "Pods-TheSeven7UITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0698BE1137880B6680C8616F3F28F345 /* AkiraTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AkiraTextField.swift; path = TextFieldEffects/TextFieldEffects/AkiraTextField.swift; sourceTree = "<group>"; };
 		09FD0EE3F48F243BDB3031B8F575CFF3 /* Pods-TheSeven7Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TheSeven7Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0FBC0A2110920AA7D58495858F30C0B2 /* Pods-TheSeven7Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TheSeven7Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		1124E9B7D228623DE9A205A5D1A180C3 /* Pods-TheSeven7UITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TheSeven7UITests-umbrella.h"; sourceTree = "<group>"; };
 		121B8EF2C143BF219186594A7E2EF96C /* Pods-TheSeven7-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TheSeven7-umbrella.h"; sourceTree = "<group>"; };
+		13B46F2064E9B3EC45B91CE44DB2B90A /* YokoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YokoTextField.swift; path = TextFieldEffects/TextFieldEffects/YokoTextField.swift; sourceTree = "<group>"; };
+		147F0E21ADCAC45375EC4FCD87D6F5A0 /* PMSuperButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PMSuperButton-Info.plist"; sourceTree = "<group>"; };
 		1790348828D71DD57E6854CD30240D95 /* Pods-TheSeven7Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheSeven7Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		191903F3E9AB3E787DBF13740A1DF761 /* TextFieldEffects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-prefix.pch"; sourceTree = "<group>"; };
+		207038FB618BA8191C2A1BC936A325AD /* MadokaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MadokaTextField.swift; path = TextFieldEffects/TextFieldEffects/MadokaTextField.swift; sourceTree = "<group>"; };
 		20F5ECC81EDE9867D5C7CE0977723FFF /* Pods-TheSeven7-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TheSeven7-dummy.m"; sourceTree = "<group>"; };
 		22882B12225E8F55BF3A2FAF08AB52CA /* Pods-TheSeven7UITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TheSeven7UITests.modulemap"; sourceTree = "<group>"; };
-		3B073B90F1DC8EA9B6C504F81B58E07C /* Pods_TheSeven7Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TheSeven7Tests.framework; path = "Pods-TheSeven7Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33F0B909507B43D63D804BF04110CE19 /* TextFieldEffects-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TextFieldEffects-Info.plist"; sourceTree = "<group>"; };
+		3ADDB84577F7F93D862B09A85FB26930 /* KaedeTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaedeTextField.swift; path = TextFieldEffects/TextFieldEffects/KaedeTextField.swift; sourceTree = "<group>"; };
+		3E22AE6685CD3C30EEA7AAA8AA4F16FB /* YoshikoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoshikoTextField.swift; path = TextFieldEffects/TextFieldEffects/YoshikoTextField.swift; sourceTree = "<group>"; };
 		3F1E6B1A445A72C9E9252409ED55B013 /* Pods-TheSeven7-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TheSeven7-Info.plist"; sourceTree = "<group>"; };
-		423C1B69E35CAFEA15361B6726551907 /* PMSuperButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PMSuperButton.swift; path = Sources/PMSuperButton.swift; sourceTree = "<group>"; };
-		4538D61A491FFAF9013E28FA0C234A68 /* PMSuperButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PMSuperButton.xcconfig; sourceTree = "<group>"; };
+		40C980E4149C1D8E8DDB10FED0E851A6 /* TextFieldEffects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldEffects.swift; path = TextFieldEffects/TextFieldEffects/TextFieldEffects.swift; sourceTree = "<group>"; };
+		44A8C54A66B1C7FDB55986ECFAA18ED8 /* PMSuperButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PMSuperButton.framework; path = PMSuperButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CB175764055321C2955ADF3A0399A78 /* PMSuperButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PMSuperButton.xcconfig; sourceTree = "<group>"; };
 		53D592EC323B21DC99074ABBE836689D /* Pods-TheSeven7.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheSeven7.release.xcconfig"; sourceTree = "<group>"; };
+		570C7BD7C238740839A0AC1FAC71285A /* TextFieldEffects-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-umbrella.h"; sourceTree = "<group>"; };
+		58A218401E6014D49F3A475E836D0B6C /* IsaoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IsaoTextField.swift; path = TextFieldEffects/TextFieldEffects/IsaoTextField.swift; sourceTree = "<group>"; };
+		598D3783A163E8F294794DCB0DDE9B6F /* Pods_TheSeven7.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TheSeven7.framework; path = "Pods-TheSeven7.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62CF3895596C9AB488CB8B476DBC3F7C /* Pods_TheSeven7UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TheSeven7UITests.framework; path = "Pods-TheSeven7UITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		633551264EFA5CC406EEA3B74015B2DA /* Pods-TheSeven7Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TheSeven7Tests.modulemap"; sourceTree = "<group>"; };
 		68AE5B7EEEDEC9DB5FC187BA96F77257 /* Pods-TheSeven7.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TheSeven7.modulemap"; sourceTree = "<group>"; };
 		6E54AEBBBF634630762BC1AE6F846D79 /* Pods-TheSeven7Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TheSeven7Tests-Info.plist"; sourceTree = "<group>"; };
@@ -68,39 +98,46 @@
 		71F5A84C38A63FDE2C8AB298A7167EAD /* Pods-TheSeven7-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TheSeven7-frameworks.sh"; sourceTree = "<group>"; };
 		72B5C3E61626D020A641F8736EE9817F /* Pods-TheSeven7.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheSeven7.debug.xcconfig"; sourceTree = "<group>"; };
 		760C577ADFD2909AC8E920A34A99BFF7 /* Pods-TheSeven7Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TheSeven7Tests-umbrella.h"; sourceTree = "<group>"; };
-		7B389AFE495301237CFEA6FA2A1CE88A /* PMSuperButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PMSuperButton-umbrella.h"; sourceTree = "<group>"; };
-		8372C5561003137F32D97CB0FCDF0F81 /* PMSuperButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PMSuperButton.framework; path = PMSuperButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DE2927427F1E0872CD66E73DC5D0C77 /* PMSuperButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PMSuperButton-dummy.m"; sourceTree = "<group>"; };
 		87857E26D08FE6B013CF6206BD187276 /* Pods-TheSeven7UITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TheSeven7UITests-Info.plist"; sourceTree = "<group>"; };
 		91114B80E6FC858996614111152C4D87 /* Pods-TheSeven7UITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TheSeven7UITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		98A2B5BC337EAB482F2498699333E6B5 /* Pods-TheSeven7UITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TheSeven7UITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9C3B5B9EE42E4218042DCAE752323587 /* Pods-TheSeven7UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheSeven7UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A1DF7BAC794061CA81257E08D68E64E6 /* Pods-TheSeven7UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheSeven7UITests.release.xcconfig"; sourceTree = "<group>"; };
+		A386055A17595E3EEF514FFBCE853FCF /* PMSuperButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PMSuperButton-prefix.pch"; sourceTree = "<group>"; };
 		AB3F7D8341038A6355DD32B7978ADBEC /* Pods-TheSeven7Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TheSeven7Tests-dummy.m"; sourceTree = "<group>"; };
+		B4F3E7EA932B2948068332475E6E28EC /* JiroTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JiroTextField.swift; path = TextFieldEffects/TextFieldEffects/JiroTextField.swift; sourceTree = "<group>"; };
 		B90D529E75A0987626978ED58BD01C20 /* Pods-TheSeven7-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TheSeven7-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C1194A4D91B1CECF26ED17E218160FC9 /* PMSuperButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PMSuperButton-dummy.m"; sourceTree = "<group>"; };
+		BD78A9746158D05CE4781A0F9624D3DB /* TextFieldEffects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TextFieldEffects.framework; path = TextFieldEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C54BF732EB49B22ADCD91E275037BE25 /* PMSuperButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PMSuperButton.modulemap; sourceTree = "<group>"; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D88BCE15AA6A5EBCF3DA85CFB8DC54E2 /* Pods_TheSeven7.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TheSeven7.framework; path = "Pods-TheSeven7.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB446F1A8CAA044416930B1F254DC0BF /* PMSuperButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PMSuperButton-Info.plist"; sourceTree = "<group>"; };
+		D99695957B6A274A5574E3C733F6E88D /* TextFieldEffects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TextFieldEffects-dummy.m"; sourceTree = "<group>"; };
+		D9B1FBDD0E73A8AA616B9F4CA1E40C06 /* HoshiTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HoshiTextField.swift; path = TextFieldEffects/TextFieldEffects/HoshiTextField.swift; sourceTree = "<group>"; };
+		D9F0F97DB890783D5B260A4AEA44A774 /* PMSuperButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PMSuperButton.swift; path = Sources/PMSuperButton.swift; sourceTree = "<group>"; };
+		DD96EF783D038E8A80DA0C4AC0D54E7C /* TextFieldEffects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TextFieldEffects.modulemap; sourceTree = "<group>"; };
+		DFAA1110D6E26BB244816F51ED8B529B /* MinoruTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinoruTextField.swift; path = TextFieldEffects/TextFieldEffects/MinoruTextField.swift; sourceTree = "<group>"; };
 		DFB98AACC5A25F56C184810B28AD5018 /* Pods-TheSeven7UITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TheSeven7UITests-dummy.m"; sourceTree = "<group>"; };
-		E017E6F4C25632668DB99AA7D72B3A5C /* PMSuperButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PMSuperButton.modulemap; sourceTree = "<group>"; };
 		E6CEDCB5DA429F14A93815213B4ECF90 /* Pods-TheSeven7Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheSeven7Tests.release.xcconfig"; sourceTree = "<group>"; };
+		ED9AF237B9F5D3149B093984EE12FF3E /* PMSuperButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PMSuperButton-umbrella.h"; sourceTree = "<group>"; };
+		FA1881771C2E9FD3E765563D87F2BE6D /* TextFieldEffects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TextFieldEffects.xcconfig; sourceTree = "<group>"; };
+		FF43C6D22EE1A913C4776F77ED40E15F /* Pods_TheSeven7Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TheSeven7Tests.framework; path = "Pods-TheSeven7Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		341390923E068E6544E70FE89886A148 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8D494607D3DF50C223BD156CA771BE4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5FBFB954D8E6836B7418031287B0449B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EB1197FEAD49B655473C3B03EC659488 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8ECCACCDC0AEAEB89043A431CBA6D96A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				856A77ABEC6698C52732B7395B3460EF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,26 +157,67 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E704DBB41C0870F54D9F86D33BA7CECE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1096E1C8B0D13912861CD2251269BEC1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2B95C1B67211D01C8F2F2588C20907C8 /* Pods */ = {
+		105E7529F6596F063755CC0DE7B0D136 /* PMSuperButton */ = {
 			isa = PBXGroup;
 			children = (
-				8CD5F020847C19E35999DEBDDBAF1C7F /* PMSuperButton */,
+				D9F0F97DB890783D5B260A4AEA44A774 /* PMSuperButton.swift */,
+				51BBCD51688E6DCA2F40A39C2A1E7CDA /* Support Files */,
+			);
+			name = PMSuperButton;
+			path = PMSuperButton;
+			sourceTree = "<group>";
+		};
+		2BCF9079AF964D03FA981FA8561F490D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				105E7529F6596F063755CC0DE7B0D136 /* PMSuperButton */,
+				2D4071015C75FA6BC821897183DEC60F /* TextFieldEffects */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		3F2DF450151AC91CF192C5CD2CBE5440 /* Products */ = {
+		2D4071015C75FA6BC821897183DEC60F /* TextFieldEffects */ = {
 			isa = PBXGroup;
 			children = (
-				8372C5561003137F32D97CB0FCDF0F81 /* PMSuperButton.framework */,
-				D88BCE15AA6A5EBCF3DA85CFB8DC54E2 /* Pods_TheSeven7.framework */,
-				3B073B90F1DC8EA9B6C504F81B58E07C /* Pods_TheSeven7Tests.framework */,
-				01E316F0017A1182C527383C3EA9C880 /* Pods_TheSeven7UITests.framework */,
+				0698BE1137880B6680C8616F3F28F345 /* AkiraTextField.swift */,
+				D9B1FBDD0E73A8AA616B9F4CA1E40C06 /* HoshiTextField.swift */,
+				58A218401E6014D49F3A475E836D0B6C /* IsaoTextField.swift */,
+				B4F3E7EA932B2948068332475E6E28EC /* JiroTextField.swift */,
+				3ADDB84577F7F93D862B09A85FB26930 /* KaedeTextField.swift */,
+				207038FB618BA8191C2A1BC936A325AD /* MadokaTextField.swift */,
+				DFAA1110D6E26BB244816F51ED8B529B /* MinoruTextField.swift */,
+				40C980E4149C1D8E8DDB10FED0E851A6 /* TextFieldEffects.swift */,
+				13B46F2064E9B3EC45B91CE44DB2B90A /* YokoTextField.swift */,
+				3E22AE6685CD3C30EEA7AAA8AA4F16FB /* YoshikoTextField.swift */,
+				34300E9897F49402022AC7D1550F8B52 /* Support Files */,
 			);
-			name = Products;
+			name = TextFieldEffects;
+			path = TextFieldEffects;
+			sourceTree = "<group>";
+		};
+		34300E9897F49402022AC7D1550F8B52 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD96EF783D038E8A80DA0C4AC0D54E7C /* TextFieldEffects.modulemap */,
+				FA1881771C2E9FD3E765563D87F2BE6D /* TextFieldEffects.xcconfig */,
+				D99695957B6A274A5574E3C733F6E88D /* TextFieldEffects-dummy.m */,
+				33F0B909507B43D63D804BF04110CE19 /* TextFieldEffects-Info.plist */,
+				191903F3E9AB3E787DBF13740A1DF761 /* TextFieldEffects-prefix.pch */,
+				570C7BD7C238740839A0AC1FAC71285A /* TextFieldEffects-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TextFieldEffects";
 			sourceTree = "<group>";
 		};
 		44C7C81600CFAE51F9895BFDBADA89F5 /* Pods-TheSeven7 */ = {
@@ -157,6 +235,20 @@
 			);
 			name = "Pods-TheSeven7";
 			path = "Target Support Files/Pods-TheSeven7";
+			sourceTree = "<group>";
+		};
+		51BBCD51688E6DCA2F40A39C2A1E7CDA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C54BF732EB49B22ADCD91E275037BE25 /* PMSuperButton.modulemap */,
+				4CB175764055321C2955ADF3A0399A78 /* PMSuperButton.xcconfig */,
+				7DE2927427F1E0872CD66E73DC5D0C77 /* PMSuperButton-dummy.m */,
+				147F0E21ADCAC45375EC4FCD87D6F5A0 /* PMSuperButton-Info.plist */,
+				A386055A17595E3EEF514FFBCE853FCF /* PMSuperButton-prefix.pch */,
+				ED9AF237B9F5D3149B093984EE12FF3E /* PMSuperButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PMSuperButton";
 			sourceTree = "<group>";
 		};
 		66B969BB31333BC46912467C6F456512 /* Targets Support Files */ = {
@@ -185,30 +277,6 @@
 			path = "Target Support Files/Pods-TheSeven7Tests";
 			sourceTree = "<group>";
 		};
-		820C17F3642D7A8860322FCF44D41ABD /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E017E6F4C25632668DB99AA7D72B3A5C /* PMSuperButton.modulemap */,
-				4538D61A491FFAF9013E28FA0C234A68 /* PMSuperButton.xcconfig */,
-				C1194A4D91B1CECF26ED17E218160FC9 /* PMSuperButton-dummy.m */,
-				DB446F1A8CAA044416930B1F254DC0BF /* PMSuperButton-Info.plist */,
-				00503682506A5D42007A82F7B0E86E7B /* PMSuperButton-prefix.pch */,
-				7B389AFE495301237CFEA6FA2A1CE88A /* PMSuperButton-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/PMSuperButton";
-			sourceTree = "<group>";
-		};
-		8CD5F020847C19E35999DEBDDBAF1C7F /* PMSuperButton */ = {
-			isa = PBXGroup;
-			children = (
-				423C1B69E35CAFEA15361B6726551907 /* PMSuperButton.swift */,
-				820C17F3642D7A8860322FCF44D41ABD /* Support Files */,
-			);
-			name = PMSuperButton;
-			path = PMSuperButton;
-			sourceTree = "<group>";
-		};
 		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,13 +301,25 @@
 			path = "Target Support Files/Pods-TheSeven7UITests";
 			sourceTree = "<group>";
 		};
+		A576F59718087CA685FAE76721510B66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44A8C54A66B1C7FDB55986ECFAA18ED8 /* PMSuperButton.framework */,
+				598D3783A163E8F294794DCB0DDE9B6F /* Pods_TheSeven7.framework */,
+				FF43C6D22EE1A913C4776F77ED40E15F /* Pods_TheSeven7Tests.framework */,
+				62CF3895596C9AB488CB8B476DBC3F7C /* Pods_TheSeven7UITests.framework */,
+				BD78A9746158D05CE4781A0F9624D3DB /* TextFieldEffects.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				2B95C1B67211D01C8F2F2588C20907C8 /* Pods */,
-				3F2DF450151AC91CF192C5CD2CBE5440 /* Products */,
+				2BCF9079AF964D03FA981FA8561F490D /* Pods */,
+				A576F59718087CA685FAE76721510B66 /* Products */,
 				66B969BB31333BC46912467C6F456512 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -263,11 +343,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4FF4C78365B1D7E9651D1B5A51443378 /* Headers */ = {
+		6F26E6CD8BE5FA50A261062C1DE4F0FC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE1B4DEF35470FA0EF7546A9E6E84B8F /* Pods-TheSeven7-umbrella.h in Headers */,
+				E392E5208CD82EB13F48699B1A1D1D8D /* TextFieldEffects-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +356,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DD3192276E3BED289659DE9458826C0 /* Pods-TheSeven7UITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D11AB02C5304CB1B3EAB2BD5B2C18492 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FFB49AB0A5AF93A90067B926975BD70 /* Pods-TheSeven7-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +393,7 @@
 			);
 			name = PMSuperButton;
 			productName = PMSuperButton;
-			productReference = 8372C5561003137F32D97CB0FCDF0F81 /* PMSuperButton.framework */;
+			productReference = 44A8C54A66B1C7FDB55986ECFAA18ED8 /* PMSuperButton.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		4791B53CB81A0A7093787C680EA8125A /* Pods-TheSeven7Tests */ = {
@@ -324,26 +412,45 @@
 			);
 			name = "Pods-TheSeven7Tests";
 			productName = "Pods-TheSeven7Tests";
-			productReference = 3B073B90F1DC8EA9B6C504F81B58E07C /* Pods_TheSeven7Tests.framework */;
+			productReference = FF43C6D22EE1A913C4776F77ED40E15F /* Pods_TheSeven7Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A2755BCEBF01B31D70047F96901AEF39 /* Pods-TheSeven7 */ = {
+		72C3AEA02EEA612587AA238181FA3BE6 /* Pods-TheSeven7 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 80D25D31FBDE4117A8A456DBC188C95E /* Build configuration list for PBXNativeTarget "Pods-TheSeven7" */;
+			buildConfigurationList = 55C2508CEE57271B0EB655263907EAC8 /* Build configuration list for PBXNativeTarget "Pods-TheSeven7" */;
 			buildPhases = (
-				4FF4C78365B1D7E9651D1B5A51443378 /* Headers */,
-				E2AB5501CD4A8ECB92A173EEC6E89DAF /* Sources */,
-				8ECCACCDC0AEAEB89043A431CBA6D96A /* Frameworks */,
-				9FFC7C3173706143F170BA62A6113756 /* Resources */,
+				D11AB02C5304CB1B3EAB2BD5B2C18492 /* Headers */,
+				1849FC992B3CA9FF683DF02694758F7F /* Sources */,
+				E704DBB41C0870F54D9F86D33BA7CECE /* Frameworks */,
+				887DF884D6551AC8A3ADAD8A5730E65B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2455CA1D1BFDC6974588F8EE20D22540 /* PBXTargetDependency */,
+				D957419A807BC2348FF2136822B100AF /* PBXTargetDependency */,
+				B4207D7489A054650AB78E55F172BF75 /* PBXTargetDependency */,
 			);
 			name = "Pods-TheSeven7";
 			productName = "Pods-TheSeven7";
-			productReference = D88BCE15AA6A5EBCF3DA85CFB8DC54E2 /* Pods_TheSeven7.framework */;
+			productReference = 598D3783A163E8F294794DCB0DDE9B6F /* Pods_TheSeven7.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		76A956D55B3D1A4C9AF386C988E60737 /* TextFieldEffects */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6C1A99A06C5C6C53E2B2FD30C241EE8 /* Build configuration list for PBXNativeTarget "TextFieldEffects" */;
+			buildPhases = (
+				6F26E6CD8BE5FA50A261062C1DE4F0FC /* Headers */,
+				0B973C8D5A9C77CD347B910BC97CA93D /* Sources */,
+				341390923E068E6544E70FE89886A148 /* Frameworks */,
+				3BCF4C9D55F0F6B33A8831641CE6DD4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextFieldEffects;
+			productName = TextFieldEffects;
+			productReference = BD78A9746158D05CE4781A0F9624D3DB /* TextFieldEffects.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		AB2398C61DC35B93E36C8ADC31CA2D62 /* Pods-TheSeven7UITests */ = {
@@ -362,7 +469,7 @@
 			);
 			name = "Pods-TheSeven7UITests";
 			productName = "Pods-TheSeven7UITests";
-			productReference = 01E316F0017A1182C527383C3EA9C880 /* Pods_TheSeven7UITests.framework */;
+			productReference = 62CF3895596C9AB488CB8B476DBC3F7C /* Pods_TheSeven7UITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -382,19 +489,27 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 3F2DF450151AC91CF192C5CD2CBE5440 /* Products */;
+			productRefGroup = A576F59718087CA685FAE76721510B66 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				1411A9EC45DCD3CA5346FD0030C57560 /* PMSuperButton */,
-				A2755BCEBF01B31D70047F96901AEF39 /* Pods-TheSeven7 */,
+				72C3AEA02EEA612587AA238181FA3BE6 /* Pods-TheSeven7 */,
 				4791B53CB81A0A7093787C680EA8125A /* Pods-TheSeven7Tests */,
 				AB2398C61DC35B93E36C8ADC31CA2D62 /* Pods-TheSeven7UITests */,
+				76A956D55B3D1A4C9AF386C988E60737 /* TextFieldEffects */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3BCF4C9D55F0F6B33A8831641CE6DD4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		61D47A31862F58699ED3ADA940CC10B7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -409,14 +524,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		88B99D66FA5767FC55BF68FD0AFA759B /* Resources */ = {
+		887DF884D6551AC8A3ADAD8A5730E65B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9FFC7C3173706143F170BA62A6113756 /* Resources */ = {
+		88B99D66FA5767FC55BF68FD0AFA759B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -426,6 +541,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0B973C8D5A9C77CD347B910BC97CA93D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FCAA4BBF7018D1AA329A6C566AAEADE /* AkiraTextField.swift in Sources */,
+				2C56FAA4A2850990B3BD9FA11E62B0D4 /* HoshiTextField.swift in Sources */,
+				0DA7AAAAB6240347A03F4B15EB69BE28 /* IsaoTextField.swift in Sources */,
+				1A710EFD7BAA5D390B0C00C1376091CF /* JiroTextField.swift in Sources */,
+				92382EC75E547A95F4904E9DE731910E /* KaedeTextField.swift in Sources */,
+				B097C90341FDB7BD60B0C68587198A42 /* MadokaTextField.swift in Sources */,
+				21460B62A4F4AD118B503ED38EA95B85 /* MinoruTextField.swift in Sources */,
+				E05DD46DD89AD28E158B40FB4D576058 /* TextFieldEffects-dummy.m in Sources */,
+				311EC6D26B61F019942D593CD34E8DBC /* TextFieldEffects.swift in Sources */,
+				62F7AC33F41534B69C00F84CAF755B81 /* YokoTextField.swift in Sources */,
+				410392493B4D415D8945DDAE5DAF01D1 /* YoshikoTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1849FC992B3CA9FF683DF02694758F7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7DCB61CDAAA69F49766DCBE80991741 /* Pods-TheSeven7-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		403CD50FB7194235C405C94B06535676 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -451,41 +592,75 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E2AB5501CD4A8ECB92A173EEC6E89DAF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				61BD83D57E0CBCDFC08E590A85FC0A29 /* Pods-TheSeven7-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2455CA1D1BFDC6974588F8EE20D22540 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PMSuperButton;
-			target = 1411A9EC45DCD3CA5346FD0030C57560 /* PMSuperButton */;
-			targetProxy = C0DAAA3FD62EB27A44D87D20D3A44E62 /* PBXContainerItemProxy */;
-		};
 		469C5A5047A6CDBC22B3A28D2F80BD71 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-TheSeven7";
-			target = A2755BCEBF01B31D70047F96901AEF39 /* Pods-TheSeven7 */;
+			target = 72C3AEA02EEA612587AA238181FA3BE6 /* Pods-TheSeven7 */;
 			targetProxy = 91EBB4C2C73B50E252FA0E6EB34EBC27 /* PBXContainerItemProxy */;
 		};
 		642B0A9B742FFD514358901621F9FE8F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-TheSeven7";
-			target = A2755BCEBF01B31D70047F96901AEF39 /* Pods-TheSeven7 */;
+			target = 72C3AEA02EEA612587AA238181FA3BE6 /* Pods-TheSeven7 */;
 			targetProxy = A9DA3029648111FF02C59D151E66C22A /* PBXContainerItemProxy */;
+		};
+		B4207D7489A054650AB78E55F172BF75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TextFieldEffects;
+			target = 76A956D55B3D1A4C9AF386C988E60737 /* TextFieldEffects */;
+			targetProxy = B094D41AB6DB7B242E85523EC71180C1 /* PBXContainerItemProxy */;
+		};
+		D957419A807BC2348FF2136822B100AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PMSuperButton;
+			target = 1411A9EC45DCD3CA5346FD0030C57560 /* PMSuperButton */;
+			targetProxy = 83D08078E64143C2DA6B21FC98B13892 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		038C859DE440CD914E042209E9AAEF90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA1881771C2E9FD3E765563D87F2BE6D /* TextFieldEffects.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				PRODUCT_MODULE_NAME = TextFieldEffects;
+				PRODUCT_NAME = TextFieldEffects;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		05C238DC9F4A9B53B3DBCD08FB5E57F3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4538D61A491FFAF9013E28FA0C234A68 /* PMSuperButton.xcconfig */;
+			baseConfigurationReference = 4CB175764055321C2955ADF3A0399A78 /* PMSuperButton.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -519,12 +694,10 @@
 			};
 			name = Release;
 		};
-		229872010CD509FDEA573A51F7956D2B /* Release */ = {
+		0E4FA731307584CFB38A57C9E821AC42 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53D592EC323B21DC99074ABBE836689D /* Pods-TheSeven7.release.xcconfig */;
+			baseConfigurationReference = FA1881771C2E9FD3E765563D87F2BE6D /* TextFieldEffects.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -534,29 +707,27 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TheSeven7/Pods-TheSeven7-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TheSeven7/Pods-TheSeven7.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				PRODUCT_MODULE_NAME = TextFieldEffects;
+				PRODUCT_NAME = TextFieldEffects;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		4881CE5747843377B616DFFC0136166B /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -661,44 +832,6 @@
 			};
 			name = Debug;
 		};
-		68993CF54C76FB376ABC30BFB57D0578 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72B5C3E61626D020A641F8736EE9817F /* Pods-TheSeven7.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TheSeven7/Pods-TheSeven7-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TheSeven7/Pods-TheSeven7.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		A4E704E99D32B43F3DA54354785DE313 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -797,9 +930,48 @@
 			};
 			name = Debug;
 		};
+		CCC0FA56EA6395CB1D7866A49F100B74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53D592EC323B21DC99074ABBE836689D /* Pods-TheSeven7.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TheSeven7/Pods-TheSeven7-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TheSeven7/Pods-TheSeven7.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		DE90F97167CDB2F0CD3AA931FB4BD28C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4538D61A491FFAF9013E28FA0C234A68 /* PMSuperButton.xcconfig */;
+			baseConfigurationReference = 4CB175764055321C2955ADF3A0399A78 /* PMSuperButton.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -857,6 +1029,44 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TheSeven7UITests/Pods-TheSeven7UITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F0FB43DA95C8B98D4B1FD9536BB6C95F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72B5C3E61626D020A641F8736EE9817F /* Pods-TheSeven7.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TheSeven7/Pods-TheSeven7-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TheSeven7/Pods-TheSeven7.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -930,6 +1140,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		55C2508CEE57271B0EB655263907EAC8 /* Build configuration list for PBXNativeTarget "Pods-TheSeven7" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0FB43DA95C8B98D4B1FD9536BB6C95F /* Debug */,
+				CCC0FA56EA6395CB1D7866A49F100B74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		591E1FE71B6A09F9EE91A275DBC82A05 /* Build configuration list for PBXNativeTarget "PMSuperButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -939,11 +1158,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		80D25D31FBDE4117A8A456DBC188C95E /* Build configuration list for PBXNativeTarget "Pods-TheSeven7" */ = {
+		B6C1A99A06C5C6C53E2B2FD30C241EE8 /* Build configuration list for PBXNativeTarget "TextFieldEffects" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				68993CF54C76FB376ABC30BFB57D0578 /* Debug */,
-				229872010CD509FDEA573A51F7956D2B /* Release */,
+				0E4FA731307584CFB38A57C9E821AC42 /* Debug */,
+				038C859DE440CD914E042209E9AAEF90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

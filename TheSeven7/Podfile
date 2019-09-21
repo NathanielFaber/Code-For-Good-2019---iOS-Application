@@ -7,6 +7,7 @@ target 'TheSeven7' do
 
   # Pods for TheSeven7
   pod 'PMSuperButton'
+  pod 'TextFieldEffects'
   target 'TheSeven7Tests' do
     inherit! :search_paths
     # Pods for testing
