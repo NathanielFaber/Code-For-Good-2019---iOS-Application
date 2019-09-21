@@ -44,6 +44,6 @@ class ReferralManager:
         return "ahhhhhhhhhhhhhhhhhhhhhh"
 
     def redirect_referral_link(self, referral_name):
-        referrals = parse_json_file(REFERRALS)
+        referrals = jsonUtils.parse_json_file(REFERRALS)
         link = referrals[referral_name][REFERRAL_URL]
         return redirect(link)

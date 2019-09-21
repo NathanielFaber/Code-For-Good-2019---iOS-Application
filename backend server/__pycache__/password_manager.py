@@ -7,6 +7,7 @@ PASSW = "password"
 PASSW_TIMEOFCHANGE = "timeofchange"
 PASSW_TIMEDIFF = "timediff"
 
+
 jsonUtils = JUtil()
 
 class PasswordManager:
@@ -29,11 +30,7 @@ class PasswordManager:
         #calculates the time since the last time the password was changed
         currentlist = jsonUtils.parse_json_file(PASSW_PATH)
         oldtime = currentlist['timeofchange']
-
-        res = str(oldtime[1]) + "/" + str(oldtime[2]) + "/" + str(oldtime[0])
-        # [2019, 9, 21, 13, 7, 35, 5, 264, 0]
-
         # newtime = time.time()
         # currentlist['timediff'] = newtime - oldtime
-        res = time.strftime("%c", oldtime) # convert to a readable time format
-        return res
+
+        return time.strftime("%c", ts) # convert to a readable time format 
