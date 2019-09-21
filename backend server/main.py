@@ -1,19 +1,16 @@
 from json_utils import JUtil
 from games_manager import GameManager
 from password_manager import PasswordManager
+from referrals_manager import ReferralManager
 from flask import Flask, jsonify, redirect
-import json
-import time
-import os
 
 app = Flask(__name__)
 
 jsonUtils = JUtil()
 gamesManager = GameManager()
 passwordManager = PasswordManager()
+referralsManager = ReferralManager()
 
-REFERRALS  = "referral-links.json"
-REFERRAL_URL = "url"
 PASSW_PATH = "password.json"
 
 #### Retrieve Password
@@ -74,52 +71,29 @@ def set_age_range(game_name, age):
     return gamesManager.set_age_range(game_name, age)
 
 @app.route('/referrals')
-def parse():
+def get_referral():
     # Sends a JSON response to the browser
-    referrals = jsonUtils.parse_json_file(REFERRALS)
-    return jsonify(referrals)
+    return referralsManager.get_referral()
 
 @app.route('/referrals/get/<referral_name>')
 def get_referral_link(referral_name):
     # Retrieves the link for a given referral_name
-    referrals = jsonUtils.parse_json_file(REFERRALS)
-    return referrals[referral_name][REFERRAL_URL]
+    return referralsManager.get_referral_link(referral_name)
 
 @app.route('/referrals/add/<referral_name>/<referral_url>')
 def add_referral(referral_name, referral_url):
     # Adds referral URLs received from partner companies
-    referrals = jsonUtils.parse_json_file(REFERRALS)
-
-    if referrals.get(referral_name) is None:
-        referrals[referral_name] = {}
-    referrals[referral_name][REFERRAL_URL] = referral_url
-
-    jsonUtils.write_json_file(referrals, REFERRALS)
-
-    return "i have the power of god and anime on my side"
+    return referralsManager.add_referral(referral_name, referral_url)
 
 @app.route('/referrals/remove/<referral_name>/<referral_url>')
-    # Removes a game from the database
 def remove_referral(referral_name, referral_url):
-    referrals = jsonUtils.parse_json_file(REFERRALS)
-
-    if referral_name in referrals:
-        del referrals[referral_name]
-
-    jsonUtils.write_json_file(referrals, REFERRALS)
-
-    return "ahhhhhhhhhhhhhhhhhhhhhh"
+    # Removes a game from the database
+    return referralsManager.remove_referral(referral_name, referral_url)
 
 @app.route('/referrals/redirect/<referral_name>')
 def redirect_referral_link(referral_name):
-    referrals = parse_json_file(REFERRALS)
-    link = referrals[referral_name][REFERRAL_URL]
-    return redirect(link)
-
-# Overwrites a json file with the given dictionary
-def write_json_file(data, path):
-    with open(path, "w") as write_file:
-        json.dump(data, write_file)
+    # Redirects the user to the given link
+    return referralsManager.redirect(referral_name)
 
 if __name__ == '__main__':
     app.run()

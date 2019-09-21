@@ -11,16 +11,19 @@
 		1F828EAD2335A8C200A93A77 /* AgeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F828EAC2335A8C200A93A77 /* AgeSelectionViewController.swift */; };
 		1F828EAF2335AA5200A93A77 /* ParentPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F828EAE2335AA5200A93A77 /* ParentPasswordViewController.swift */; };
 		1F828EB12335D38600A93A77 /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F828EB02335D38600A93A77 /* AdminViewController.swift */; };
+		1F828EB32335EBEC00A93A77 /* AdminLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F828EB22335EBEC00A93A77 /* AdminLoginViewController.swift */; };
 		535B991304E158DB43C5A350 /* Pods_TheSeven7Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2640FD50BF0C9CE6D982906 /* Pods_TheSeven7Tests.framework */; };
 		7B6B1A208076851F4364E4ED /* Pods_TheSeven7.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0AB2674D0FB62D0B53EEF8 /* Pods_TheSeven7.framework */; };
 		AB8A63F623359E9100BC2D7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8A63F523359E9100BC2D7A /* AppDelegate.swift */; };
-		AB8A63F823359E9100BC2D7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8A63F723359E9100BC2D7A /* ViewController.swift */; };
+		AB8A63F823359E9100BC2D7A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8A63F723359E9100BC2D7A /* MainViewController.swift */; };
 		AB8A63FB23359E9100BC2D7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB8A63F923359E9100BC2D7A /* Main.storyboard */; };
 		AB8A63FD23359E9300BC2D7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB8A63FC23359E9300BC2D7A /* Assets.xcassets */; };
 		AB8A640023359E9300BC2D7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB8A63FE23359E9300BC2D7A /* LaunchScreen.storyboard */; };
 		AB8A640B23359E9300BC2D7A /* TheSeven7Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8A640A23359E9300BC2D7A /* TheSeven7Tests.swift */; };
 		AB8A641623359E9300BC2D7A /* TheSeven7UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8A641523359E9300BC2D7A /* TheSeven7UITests.swift */; };
 		AB8A64242335A10500BC2D7A /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8A64232335A10500BC2D7A /* ParentViewController.swift */; };
+		ABB984E62335EFB9006801E8 /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB984E52335EFB9006801E8 /* ResourcesViewController.swift */; };
+		ABB984E82335FAD2006801E8 /* ReferralsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB984E72335FAD2006801E8 /* ReferralsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,7 @@
 		1F828EAC2335A8C200A93A77 /* AgeSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeSelectionViewController.swift; sourceTree = "<group>"; };
 		1F828EAE2335AA5200A93A77 /* ParentPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentPasswordViewController.swift; sourceTree = "<group>"; };
 		1F828EB02335D38600A93A77 /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
+		1F828EB22335EBEC00A93A77 /* AdminLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminLoginViewController.swift; sourceTree = "<group>"; };
 		3CDE58E63A8E10378031129E /* Pods-TheSeven7UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheSeven7UITests.release.xcconfig"; path = "Target Support Files/Pods-TheSeven7UITests/Pods-TheSeven7UITests.release.xcconfig"; sourceTree = "<group>"; };
 		3D65736BE466911C8A237BE0 /* Pods-TheSeven7Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheSeven7Tests.debug.xcconfig"; path = "Target Support Files/Pods-TheSeven7Tests/Pods-TheSeven7Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		72AFFFA2350458209368F3BC /* Pods-TheSeven7UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheSeven7UITests.debug.xcconfig"; path = "Target Support Files/Pods-TheSeven7UITests/Pods-TheSeven7UITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -53,7 +57,7 @@
 		A2640FD50BF0C9CE6D982906 /* Pods_TheSeven7Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheSeven7Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8A63F223359E9100BC2D7A /* TheSeven7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheSeven7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8A63F523359E9100BC2D7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AB8A63F723359E9100BC2D7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AB8A63F723359E9100BC2D7A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AB8A63FA23359E9100BC2D7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB8A63FC23359E9300BC2D7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB8A63FF23359E9300BC2D7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,6 +69,8 @@
 		AB8A641523359E9300BC2D7A /* TheSeven7UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheSeven7UITests.swift; sourceTree = "<group>"; };
 		AB8A641723359E9300BC2D7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB8A64232335A10500BC2D7A /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
+		ABB984E52335EFB9006801E8 /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
+		ABB984E72335FAD2006801E8 /* ReferralsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferralsViewController.swift; sourceTree = "<group>"; };
 		BAA27B0515525F5BFB37A218 /* Pods-TheSeven7.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheSeven7.debug.xcconfig"; path = "Target Support Files/Pods-TheSeven7/Pods-TheSeven7.debug.xcconfig"; sourceTree = "<group>"; };
 		BEA935F86EA1331F6540DB45 /* Pods_TheSeven7UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheSeven7UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -136,15 +142,18 @@
 			isa = PBXGroup;
 			children = (
 				AB8A63F523359E9100BC2D7A /* AppDelegate.swift */,
-				AB8A63F723359E9100BC2D7A /* ViewController.swift */,
+				AB8A63F723359E9100BC2D7A /* MainViewController.swift */,
 				AB8A64232335A10500BC2D7A /* ParentViewController.swift */,
 				1F828EAC2335A8C200A93A77 /* AgeSelectionViewController.swift */,
 				AB8A63F923359E9100BC2D7A /* Main.storyboard */,
+				ABB984E72335FAD2006801E8 /* ReferralsViewController.swift */,
+				ABB984E52335EFB9006801E8 /* ResourcesViewController.swift */,
 				1F828EB02335D38600A93A77 /* AdminViewController.swift */,
 				AB8A63FC23359E9300BC2D7A /* Assets.xcassets */,
 				AB8A63FE23359E9300BC2D7A /* LaunchScreen.storyboard */,
 				AB8A640123359E9300BC2D7A /* Info.plist */,
 				1F828EAE2335AA5200A93A77 /* ParentPasswordViewController.swift */,
+				1F828EB22335EBEC00A93A77 /* AdminLoginViewController.swift */,
 			);
 			path = TheSeven7;
 			sourceTree = "<group>";
@@ -412,11 +421,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F828EB12335D38600A93A77 /* AdminViewController.swift in Sources */,
-				AB8A63F823359E9100BC2D7A /* ViewController.swift in Sources */,
+				AB8A63F823359E9100BC2D7A /* MainViewController.swift in Sources */,
 				AB8A63F623359E9100BC2D7A /* AppDelegate.swift in Sources */,
+				ABB984E62335EFB9006801E8 /* ResourcesViewController.swift in Sources */,
 				1F828EAD2335A8C200A93A77 /* AgeSelectionViewController.swift in Sources */,
+				ABB984E82335FAD2006801E8 /* ReferralsViewController.swift in Sources */,
 				AB8A64242335A10500BC2D7A /* ParentViewController.swift in Sources */,
 				1F828EAF2335AA5200A93A77 /* ParentPasswordViewController.swift in Sources */,
+				1F828EB32335EBEC00A93A77 /* AdminLoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
