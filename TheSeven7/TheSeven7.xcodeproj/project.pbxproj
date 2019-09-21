@@ -24,6 +24,7 @@
 		AB8A64242335A10500BC2D7A /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8A64232335A10500BC2D7A /* ParentViewController.swift */; };
 		ABB984E62335EFB9006801E8 /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB984E52335EFB9006801E8 /* ResourcesViewController.swift */; };
 		ABB984E82335FAD2006801E8 /* ReferralsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB984E72335FAD2006801E8 /* ReferralsViewController.swift */; };
+		F5131F472336107D00F3F0E8 /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5131F462336107D00F3F0E8 /* TwitterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		ABB984E72335FAD2006801E8 /* ReferralsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferralsViewController.swift; sourceTree = "<group>"; };
 		BAA27B0515525F5BFB37A218 /* Pods-TheSeven7.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheSeven7.debug.xcconfig"; path = "Target Support Files/Pods-TheSeven7/Pods-TheSeven7.debug.xcconfig"; sourceTree = "<group>"; };
 		BEA935F86EA1331F6540DB45 /* Pods_TheSeven7UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheSeven7UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5131F462336107D00F3F0E8 /* TwitterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				AB8A64232335A10500BC2D7A /* ParentViewController.swift */,
 				1F828EAC2335A8C200A93A77 /* AgeSelectionViewController.swift */,
 				AB8A63F923359E9100BC2D7A /* Main.storyboard */,
+				F5131F462336107D00F3F0E8 /* TwitterViewController.swift */,
 				ABB984E72335FAD2006801E8 /* ReferralsViewController.swift */,
 				ABB984E52335EFB9006801E8 /* ResourcesViewController.swift */,
 				1F828EB02335D38600A93A77 /* AdminViewController.swift */,
@@ -422,6 +425,7 @@
 			files = (
 				1F828EB12335D38600A93A77 /* AdminViewController.swift in Sources */,
 				AB8A63F823359E9100BC2D7A /* MainViewController.swift in Sources */,
+				F5131F472336107D00F3F0E8 /* TwitterViewController.swift in Sources */,
 				AB8A63F623359E9100BC2D7A /* AppDelegate.swift in Sources */,
 				ABB984E62335EFB9006801E8 /* ResourcesViewController.swift in Sources */,
 				1F828EAD2335A8C200A93A77 /* AgeSelectionViewController.swift in Sources */,

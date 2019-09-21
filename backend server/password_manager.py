@@ -32,5 +32,5 @@ class PasswordManager:
         oldtime = currentlist['timeofchange']
         # newtime = time.time()
         # currentlist['timediff'] = newtime - oldtime
-
-        return time.strftime("%c", ts) # convert to a readable time format 
+        res = time.strftime("%c", oldtime) # convert to a readable time format
+        return res
