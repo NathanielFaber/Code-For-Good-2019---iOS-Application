@@ -1,0 +1,20 @@
+PODS:
+  - PMSuperButton (3.0.1)
+  - TextFieldEffects (1.5.1)
+
+DEPENDENCIES:
+  - PMSuperButton
+  - TextFieldEffects
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - PMSuperButton
+    - TextFieldEffects
+
+SPEC CHECKSUMS:
+  PMSuperButton: 2bef6f8659a5df969a69887f496ef309480c65eb
+  TextFieldEffects: 7d372f58aeaf9acd9626bbf962680aef926b085d
+
+PODFILE CHECKSUM: c9014500584ec79b0797b3bd844a1bdac8c07f67
+
+COCOAPODS: 1.6.0

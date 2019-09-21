@@ -2,8 +2,8 @@
 //  TheSeven7Tests.swift
 //  TheSeven7Tests
 //
-//  Created by Nick Pappas on 9/20/19.
-//  Copyright © 2019 Nick Pappas. All rights reserved.
+//  Created by Ayline Villegas  on 9/20/19.
+//  Copyright © 2019 Ayline Villegas . All rights reserved.
 //
 
 import XCTest
