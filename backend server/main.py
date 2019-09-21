@@ -3,6 +3,7 @@ import json
 app = Flask(__name__)
 
 GAMES_PATH = "games.json"
+PASSW_PATH = "password.json"
 GAMES_URL_KEYWORD = 'url'
 GAMES_USAGE_KEYWORD = 'usage'
 
@@ -10,10 +11,28 @@ GAMES_USAGE_KEYWORD = 'usage'
 def parse_json_file(path):
     return json.load(open(path))
 
-# Overwrites a json file with the given dictionary
-def write_json_file(data, path):
-    with open(path, "w") as write_file:
-        json.dump(data, write_file)
+    # Overwrites a json file with the given dictionary
+    def write_json_file(data, path):
+        with open(path, "w") as write_file:
+            json.dump(data, write_file)
+
+
+#### Retrieve Password
+
+@app.route('/parentpassword')
+def get_pass():
+    # Retrieves the current parent password
+    password = parse_json_file(PASSW_PATH)
+    return jsonify(password)
+
+@app.route('/parentpassword/change/<new_pass>')
+def change_pass(new_pass):
+    password = parse_json_file(PASSW_PATH)
+
+
+
+####
+
 
 @app.route('/games')
 def get_games():
@@ -36,7 +55,7 @@ def remove_game(game_name):
         del games[game_name]
 
     write_json_file(games, GAMES_PATH)
-    
+
     return "VErryYYy GooOd"
 
 @app.route('/games/add/<game_name>/<game_url>')
@@ -47,7 +66,7 @@ def add_game(game_name, game_url):
     if games.get(game_name) is None:
         games[game_name] = {}
     games[game_name][GAMES_URL_KEYWORD] = game_url
-    
+
     write_json_file(games, GAMES_PATH)
 
     return "VEry GOOD"
