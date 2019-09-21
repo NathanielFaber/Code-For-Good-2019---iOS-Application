@@ -75,16 +75,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="L4E-7M-xVv">
-                                <rect key="frame" x="324" y="439" width="121" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
-                                </segments>
-                            </segmentedControl>
+                            <tabBar contentMode="TopLeft" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DEi-b9-qUr">
+                                <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.57647058823529407" green="0.43529411764705883" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="contentStretch" x="0.20000000000000001" y="0.0" width="0.94999999999999996" height="1"/>
+                                <items>
+                                    <tabBarItem id="nEZ-WF-oxn"/>
+                                    <tabBarItem systemItem="more" id="paF-bz-kwT"/>
+                                </items>
+                                <color key="selectedImageTintColor" red="0.57647058823529407" green="0.43529411764705883" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
+                            </tabBar>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.6588235294" green="0.76470588240000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="AsI-6J-KP4"/>
                     </view>
                 </viewController>
