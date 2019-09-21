@@ -14,7 +14,7 @@ class YoutubeViewController: UIViewController {
     @IBOutlet weak var webView: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url = URL(string:"https://gamesbears.com/coloring-book-mobile/coloring-book-mobile.html")
+        let url = URL(string:"https://www.youtube.com/user/thechicagocac")
         let request = URLRequest(url: url!)
         webView.loadRequest(request)
         
