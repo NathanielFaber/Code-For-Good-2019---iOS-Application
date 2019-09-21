@@ -4,6 +4,7 @@ from json_utils import JUtil
 GAMES_PATH = "games.json"
 GAMES_URL_KEYWORD = 'url'
 GAMES_USAGE_KEYWORD = 'usage'
+GAMES_AGE_KEYWORD = 'age'
 
 jsonUtils = JUtil()
 
@@ -30,13 +31,14 @@ class GameManager:
 
         return "VErryYYy GooOd"
 
-    def add_game(self, game_name, game_url):
+    def add_game(self, game_name, game_url, age):
         # Adds or updates a game to the json file
         games = jsonUtils.parse_json_file(GAMES_PATH)
 
         if games.get(game_name) is None:
             games[game_name] = {}
         games[game_name][GAMES_URL_KEYWORD] = game_url
+        games[game_name][GAMES_AGE_KEYWORD] = age
         games[game_name][GAMES_USAGE_KEYWORD] = "0"
 
         jsonUtils.write_json_file(games, GAMES_PATH)
@@ -65,3 +67,23 @@ class GameManager:
         if games.get(game_name) is None:
             return
         return games[game_name][GAMES_USAGE_KEYWORD]
+
+    def get_age_range(self, game_name):
+        # Returns the age range of a given game
+        games = jsonUtils.parse_json_file(GAMES_PATH)
+
+        if games.get(game_name) is None:
+            return
+        return games[game_name][GAMES_AGE_KEYWORD]
+
+    def set_age_range(self, game_name, age):
+        # Sets the age range of a given game
+        games = jsonUtils.parse_json_file(GAMES_PATH)
+
+        if games.get(game_name) is None:
+            return
+        games[game_name][GAMES_AGE_KEYWORD] = age
+        
+        jsonUtils.write_json_file(games, GAMES_PATH)
+
+        return 'VeRy GooD'

@@ -48,10 +48,10 @@ def remove_game(game_name):
     # Removes a game from the database
     return gamesManager.remove_game(game_name)
 
-@app.route('/games/add/<game_name>/<game_url>')
-def add_game(game_name, game_url):
+@app.route('/games/add/<game_name>/<game_url>/<game_age>')
+def add_game(game_name, game_url, game_age):
     # Adds or updates a game to the json file
-    return gamesManager.add_game(game_name, game_url)
+    return gamesManager.add_game(game_name, game_url, game_age)
 
 @app.route('/games/update/<game_name>/<usage_time>')
 def update_usage_statistic(game_name, usage_time):
@@ -62,6 +62,16 @@ def update_usage_statistic(game_name, usage_time):
 def get_usage_statistic(game_name):
     # Returns the usage time of a given game
     return gamesManager.get_usage_statistic(game_name)
+
+@app.route('/games/get/age/<game_name>')
+def get_age_range(game_name):
+    # Returns the age range of a given game
+    return gamesManager.get_age_range(game_name)
+
+@app.route('/games/set/age/<game_name>/<age>')
+def set_age_range(game_name, age):
+    # Sets the age of a given game
+    return gamesManager.set_age_range(game_name, age)
 
 @app.route('/referrals')
 def parse():
