@@ -1,5 +1,6 @@
 from json_utils import JUtil
 from games_manager import GameManager
+from password_manager import PasswordManager
 from flask import Flask, jsonify, redirect
 import json
 import time
@@ -9,46 +10,28 @@ app = Flask(__name__)
 
 jsonUtils = JUtil()
 gamesManager = GameManager()
+passwordManager = PasswordManager()
 
 REFERRALS  = "referral-links.json"
 REFERRAL_URL = "url"
 PASSW_PATH = "password.json"
 
-# Returns a dictionary formatted by the json file
-class parentPassword:
-    def __init__(self,password,timeofchange):
-        self.password = password
-        self.timeofchange = timeofchange
-
 #### Retrieve Password
 @app.route('/parentpassword')
 def get_pass():
     # Retrieves the current parent password
-    password = jsonUtils.parse_json_file(PASSW_PATH)
-    return jsonify(password)
+    return passwordManager.get_pass()
 
 @app.route('/parentpassword/change/<new_pass>')
 def change_pass(new_pass):
-    currentlist = jsonUtils.parse_json_file(PASSW_PATH)
-    currentlist['password'] = new_pass
-    currentlist['timeofchange'] = time.time()
-
-    jsonUtils.write_json_file(currentlist, PASSW_PATH)
-
-    return "New Password set to " + currentlist['password']
+    # Changes the current password
+    return passwordManager.change_pass(new_pass)
 
 @app.route('/parentpassword/time/')
 def get_time_diff():
-    currentlist = jsonUtils.parse_json_file(PASSW_PATH)
-    oldtime = currentlist['timeofchange']
-    newtime = time.time()
-    currentlist['timediff'] = newtime-oldtime
-
-    jsonUtils.write_json_file(currentlist, PASSW_PATH)
-
-    return currentlist['timediff']
+    # Amount of time since you've changed your password
+    return passwordManager.get_time_diff()
 ####
-
 
 @app.route('/games')
 def get_games():
@@ -91,6 +74,31 @@ def get_referral_link(referral_name):
     # Retrieves the link for a given referral_name
     referrals = jsonUtils.parse_json_file(REFERRALS)
     return referrals[referral_name][REFERRAL_URL]
+
+@app.route('/referrals/add/<referral_name>/<referral_url>')
+def add_referral(referral_name, referral_url):
+    # Adds referral URLs received from partner companies
+    referrals = jsonUtils.parse_json_file(REFERRALS)
+
+    if referrals.get(referral_name) is None:
+        referrals[referral_name] = {}
+    referrals[referral_name][REFERRAL_URL] = referral_url
+
+    jsonUtils.write_json_file(referrals, REFERRALS)
+
+    return "i have the power of god and anime on my side"
+
+@app.route('/referrals/remove/<referral_name>/<referral_url>')
+    # Removes a game from the database
+def remove_referral(referral_name, referral_url):
+    referrals = jsonUtils.parse_json_file(REFERRALS)
+
+    if referral_name in referrals:
+        del referrals[referral_name]
+
+    jsonUtils.write_json_file(referrals, REFERRALS)
+
+    return "ahhhhhhhhhhhhhhhhhhhhhh"
 
 @app.route('/referrals/redirect/<referral_name>')
 def redirect_referral_link(referral_name):
