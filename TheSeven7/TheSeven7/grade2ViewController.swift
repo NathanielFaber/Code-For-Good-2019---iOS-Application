@@ -1,5 +1,5 @@
 //
-//  CorndogsViewController.swift
+//  grade2ViewController.swift
 //  TheSeven7
 //
 //  Created by Ayline Villegas  on 9/21/19.
@@ -9,15 +9,15 @@
 import UIKit
 import WebKit
 
-class CorndogsViewController: UIViewController {
+class grade2ViewController: UIViewController {
 
     @IBOutlet weak var webView: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url = URL(string:"http://www.specialbites.com/Easy-Sensory-Games-for-special-needs/Fireworks-two-sensory-switch-games/Fireworks-two-online-sensory-switch-and-touchscreen-game-for-special-needs-children.html")
+        
+        let url = URL(string:"https://2048.app/")
         let request = URLRequest(url: url!)
         webView.loadRequest(request)
-
 
         // Do any additional setup after loading the view.
     }

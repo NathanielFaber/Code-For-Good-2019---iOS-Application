@@ -14,7 +14,7 @@ class ColoringBookViewController: UIViewController {
     @IBOutlet weak var webView: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url = URL(string:"https://games.cdn.famobi.com/html5games/k/kids-color-book-2/v230/?fg_domain=play.famobi.com&fg_aid=A1000-1&fg_uid=03b1e156-de50-49d6-964b-01ea276eee3d&fg_pid=4638e320-4444-4514-81c4-d80a8c662371&fg_beat=584&original_ref=https%3A%2F%2Fgames.famobi.com%2Feducational%2Fkids-color-book-2%3Ftechnology%3Dweb")
+        let url = URL(string:"https://gamesbears.com/coloring-book-mobile/coloring-book-mobile.html")
         let request = URLRequest(url: url!)
         webView.loadRequest(request)
 

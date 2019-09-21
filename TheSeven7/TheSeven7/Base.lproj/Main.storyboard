@@ -920,7 +920,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.79918840960000004" green="0.64327150889999996" blue="0.93754770730000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
-                                <state key="normal" title="Dress Up">
+                                <state key="normal" title="Truck Trials">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -934,6 +934,9 @@
                                         <color key="value" red="0.57647058819999997" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="p8j-tn-PYn" kind="show" id="vjE-fd-D6r"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0d-0r-uCN" customClass="PMSuperButton" customModule="PMSuperButton">
                                 <rect key="frame" x="65" y="665" width="705" height="151"/>
@@ -951,6 +954,9 @@
                                         <color key="value" red="0.73238753190000005" green="0.37912556949999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="TwH-mM-Z5A" kind="show" id="Fnc-Tq-2fP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.72953563928604126" green="0.79717308282852173" blue="0.67448437213897705" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1012,7 +1018,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.704113353" green="0.57155391980000003" blue="0.82129215529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
-                                <state key="normal" title="Train Game">
+                                <state key="normal" title="Tetra">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1023,6 +1029,9 @@
                                         <color key="value" red="0.73238753190000005" green="0.37912556949999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="R94-f4-0dC" kind="show" id="gUU-0l-A1T"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.72953563928604126" green="0.79717308282852173" blue="0.67448437213897705" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1093,6 +1102,66 @@
             </objects>
             <point key="canvasLocation" x="1372.6618705035971" y="2182.9145728643216"/>
         </scene>
+        <!--Grade1 View Controller-->
+        <scene sceneID="fRs-zD-rLn">
+            <objects>
+                <viewController id="p8j-tn-PYn" customClass="grade1ViewController" customModule="TheSeven7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tdu-K0-UAG">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1120"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fmc-KT-wUI">
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="1120"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Fmc-KT-wUI" firstAttribute="top" secondItem="dVy-zD-THC" secondAttribute="top" id="37j-g5-buB"/>
+                            <constraint firstItem="Fmc-KT-wUI" firstAttribute="leading" secondItem="dVy-zD-THC" secondAttribute="leading" id="NAC-hE-7Uv"/>
+                            <constraint firstAttribute="bottom" secondItem="Fmc-KT-wUI" secondAttribute="bottom" id="U28-7H-GaK"/>
+                            <constraint firstItem="Fmc-KT-wUI" firstAttribute="trailing" secondItem="dVy-zD-THC" secondAttribute="trailing" id="UmH-6s-gTD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dVy-zD-THC"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="Fmc-KT-wUI" id="Ls8-sO-rIA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3eL-tD-cRq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1377.6978417266189" y="2942.713567839196"/>
+        </scene>
+        <!--Grade2 View Controller-->
+        <scene sceneID="ltL-BY-6uO">
+            <objects>
+                <viewController id="TwH-mM-Z5A" customClass="grade2ViewController" customModule="TheSeven7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MiX-z9-Dvt">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1120"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ue1-ct-u5I">
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="1120"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ue1-ct-u5I" firstAttribute="trailing" secondItem="FDx-nf-h9q" secondAttribute="trailing" id="2ve-FN-uhw"/>
+                            <constraint firstAttribute="bottom" secondItem="ue1-ct-u5I" secondAttribute="bottom" id="AOx-ph-unz"/>
+                            <constraint firstItem="ue1-ct-u5I" firstAttribute="leading" secondItem="FDx-nf-h9q" secondAttribute="leading" id="GHZ-xV-rFA"/>
+                            <constraint firstItem="ue1-ct-u5I" firstAttribute="top" secondItem="FDx-nf-h9q" secondAttribute="top" id="zNh-sY-KOy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FDx-nf-h9q"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="ue1-ct-u5I" id="wkv-ZV-TyV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S6i-Zc-Azj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2144.6043165467627" y="2947.7386934673368"/>
+        </scene>
         <!--Train View Controller-->
         <scene sceneID="qgn-LY-tcO">
             <objects>
@@ -1122,6 +1191,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q0z-hf-KcE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2128.7769784172665" y="2182.9145728643216"/>
+        </scene>
+        <!--Tetra View Controller-->
+        <scene sceneID="rfg-Cz-peW">
+            <objects>
+                <viewController id="R94-f4-0dC" customClass="TetraViewController" customModule="TheSeven7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ADB-d8-OEW">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1120"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S03-Hz-QNK">
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="1120"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="S03-Hz-QNK" firstAttribute="top" secondItem="SpQ-zM-uEy" secondAttribute="top" id="CwY-O4-qEg"/>
+                            <constraint firstItem="S03-Hz-QNK" firstAttribute="leading" secondItem="SpQ-zM-uEy" secondAttribute="leading" id="NWk-CA-AI7"/>
+                            <constraint firstAttribute="bottom" secondItem="S03-Hz-QNK" secondAttribute="bottom" id="Qoj-qa-Hhz"/>
+                            <constraint firstItem="S03-Hz-QNK" firstAttribute="trailing" secondItem="SpQ-zM-uEy" secondAttribute="trailing" id="arh-5n-juM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SpQ-zM-uEy"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="S03-Hz-QNK" id="jdO-fn-h8T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xge-6T-knk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2836.6906474820148" y="2182.9145728643216"/>
         </scene>
         <!--Corndogs View Controller-->
         <scene sceneID="NI0-1L-RZE">
@@ -1157,6 +1256,36 @@
             </objects>
             <point key="canvasLocation" x="-79.136690647482027" y="2182.9145728643216"/>
         </scene>
+        <!--Sensory View Controller-->
+        <scene sceneID="Die-Tm-lae">
+            <objects>
+                <viewController id="ZYs-8z-Pkw" customClass="sensoryViewController" customModule="TheSeven7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SPg-TB-gRJ">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1120"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dvv-rV-2eU">
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="1120"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dvv-rV-2eU" firstAttribute="top" secondItem="lsq-4A-xUD" secondAttribute="top" id="9xq-yS-hKw"/>
+                            <constraint firstAttribute="bottom" secondItem="dvv-rV-2eU" secondAttribute="bottom" id="QaR-rk-HOs"/>
+                            <constraint firstItem="dvv-rV-2eU" firstAttribute="trailing" secondItem="lsq-4A-xUD" secondAttribute="trailing" id="SNN-Ba-4yy"/>
+                            <constraint firstItem="dvv-rV-2eU" firstAttribute="leading" secondItem="lsq-4A-xUD" secondAttribute="leading" id="a16-ik-xmY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lsq-4A-xUD"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="dvv-rV-2eU" id="jfY-Ik-ssS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bib-Av-NeA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-65.467625899280577" y="2889.9497487437188"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="6Xx-ut-4Bo">
             <objects>
@@ -1185,7 +1314,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.79918840960000004" green="0.64327150889999996" blue="0.93754770730000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
-                                <state key="normal" title="Corn Dogs">
+                                <state key="normal" title="Fireworks">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1219,6 +1348,9 @@
                                         <color key="value" red="0.73238753190000005" green="0.37912556949999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="ZYs-8z-Pkw" kind="show" id="10Y-td-W0q"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.72953563928604126" green="0.79717308282852173" blue="0.67448437213897705" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
