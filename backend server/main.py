@@ -45,7 +45,7 @@ def add_game(game_name, game_url):
     games = parse_json_file(GAMES_PATH)
 
     if games.get(game_name) is None:
-        games[game_name] = []
+        games[game_name] = {}
     games[game_name][GAMES_URL_KEYWORD] = game_url
     
     write_json_file(games, GAMES_PATH)
