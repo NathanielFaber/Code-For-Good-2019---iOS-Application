@@ -29,14 +29,24 @@ def get_pass():
 
 @app.route('/parentpassword/change/<new_pass>')
 def change_pass(new_pass):
-    passtoAdd = parentPassword(new_pass, time.time())
     currentlist = jsonUtils.parse_json_file(PASSW_PATH)
-    currentlist.append(passtoAdd)
+    currentlist['password'] = new_pass
+    currentlist['timeofchange'] = time.time()
 
     jsonUtils.write_json_file(currentlist, PASSW_PATH)
 
-    return "New Password set to " + passtoAdd.password
+    return "New Password set to " + currentlist['password']
 
+@app.route('/parentpassword/time/')
+def get_time_diff():
+    currentlist = jsonUtils.parse_json_file(PASSW_PATH)
+    oldtime = currentlist['timeofchange']
+    newtime = time.time()
+    currentlist['timediff'] = newtime-oldtime
+
+    jsonUtils.write_json_file(currentlist, PASSW_PATH)
+
+    return "Time Diff is " + currentlist['timediff']
 ####
 
 
