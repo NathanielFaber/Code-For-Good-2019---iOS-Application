@@ -472,7 +472,8 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pqi-MI-rL8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1374.8201438848921" y="-1478.391959798995"/>
-        <!--View Controller-->
+        </scene>
+        <!--Resources View Controller-->
         <scene sceneID="88W-Cg-gXm">
             <objects>
                 <viewController id="V9N-9h-oHo" customClass="ResourcesViewController" customModule="TheSeven7" customModuleProvider="target" sceneMemberID="viewController">
