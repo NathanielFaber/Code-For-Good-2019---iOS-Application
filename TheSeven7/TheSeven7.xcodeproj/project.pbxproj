@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F828EAD2335A8C200A93A77 /* AgeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F828EAC2335A8C200A93A77 /* AgeSelectionViewController.swift */; };
+		1F828EAF2335AA5200A93A77 /* ParentPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F828EAE2335AA5200A93A77 /* ParentPasswordViewController.swift */; };
 		AB8A63F623359E9100BC2D7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8A63F523359E9100BC2D7A /* AppDelegate.swift */; };
 		AB8A63F823359E9100BC2D7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8A63F723359E9100BC2D7A /* ViewController.swift */; };
 		AB8A63FB23359E9100BC2D7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB8A63F923359E9100BC2D7A /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F828EAC2335A8C200A93A77 /* AgeSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeSelectionViewController.swift; sourceTree = "<group>"; };
+		1F828EAE2335AA5200A93A77 /* ParentPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentPasswordViewController.swift; sourceTree = "<group>"; };
 		AB8A63F223359E9100BC2D7A /* TheSeven7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheSeven7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8A63F523359E9100BC2D7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB8A63F723359E9100BC2D7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,10 +106,12 @@
 				AB8A63F523359E9100BC2D7A /* AppDelegate.swift */,
 				AB8A63F723359E9100BC2D7A /* ViewController.swift */,
 				AB8A64232335A10500BC2D7A /* ParentViewController.swift */,
+				1F828EAC2335A8C200A93A77 /* AgeSelectionViewController.swift */,
 				AB8A63F923359E9100BC2D7A /* Main.storyboard */,
 				AB8A63FC23359E9300BC2D7A /* Assets.xcassets */,
 				AB8A63FE23359E9300BC2D7A /* LaunchScreen.storyboard */,
 				AB8A640123359E9300BC2D7A /* Info.plist */,
+				1F828EAE2335AA5200A93A77 /* ParentPasswordViewController.swift */,
 			);
 			path = TheSeven7;
 			sourceTree = "<group>";
@@ -261,7 +267,9 @@
 			files = (
 				AB8A63F823359E9100BC2D7A /* ViewController.swift in Sources */,
 				AB8A63F623359E9100BC2D7A /* AppDelegate.swift in Sources */,
+				1F828EAD2335A8C200A93A77 /* AgeSelectionViewController.swift in Sources */,
 				AB8A64242335A10500BC2D7A /* ParentViewController.swift in Sources */,
+				1F828EAF2335AA5200A93A77 /* ParentPasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
