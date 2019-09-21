@@ -19,7 +19,7 @@ class PasswordManager:
     def change_pass(self, new_pass):
         currentlist = jsonUtils.parse_json_file(PASSW_PATH)
         currentlist['password'] = new_pass
-        currentlist['timeofchange'] = time.time()
+        currentlist['timeofchange'] = time.gmtime()
 
         jsonUtils.write_json_file(currentlist, PASSW_PATH)
 
@@ -28,9 +28,7 @@ class PasswordManager:
     def get_time_diff(self):
         currentlist = jsonUtils.parse_json_file(PASSW_PATH)
         oldtime = currentlist['timeofchange']
-        newtime = time.time()
-        currentlist['timediff'] = newtime - oldtime
+        # newtime = time.time()
+        # currentlist['timediff'] = newtime - oldtime
 
-        jsonUtils.write_json_file(currentlist, PASSW_PATH)
-
-        return currentlist['timediff']
+        return time.strftime("%c", ts)
