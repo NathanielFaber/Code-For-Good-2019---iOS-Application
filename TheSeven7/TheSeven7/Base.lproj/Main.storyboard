@@ -549,6 +549,9 @@
                                         <color key="value" red="0.73238753190000005" green="0.37912556949999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="5Sl-wA-LIJ" kind="show" id="Mep-mI-FUY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gja-bk-qib" customClass="PMSuperButton" customModule="PMSuperButton">
                                 <rect key="frame" x="463" y="982" width="100" height="100"/>
@@ -565,6 +568,9 @@
                                         <color key="value" red="0.73238753190000005" green="0.37912556949999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="YDt-XE-b7H" kind="show" id="QVl-Oi-Bfb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBu-xh-IHt" customClass="PMSuperButton" customModule="PMSuperButton">
                                 <rect key="frame" x="269" y="981" width="100" height="100"/>
@@ -695,6 +701,66 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ATr-iH-OZn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2828" y="722"/>
+        </scene>
+        <!--Instagram View Controller-->
+        <scene sceneID="BGB-ex-1e3">
+            <objects>
+                <viewController id="YDt-XE-b7H" customClass="InstagramViewController" customModule="TheSeven7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GqC-Wx-MSS">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1120"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XzM-xE-Zed">
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="1120"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XzM-xE-Zed" firstAttribute="top" secondItem="ygn-yN-dmB" secondAttribute="top" id="KD4-GY-ccS"/>
+                            <constraint firstItem="XzM-xE-Zed" firstAttribute="trailing" secondItem="ygn-yN-dmB" secondAttribute="trailing" id="jw8-y9-6dK"/>
+                            <constraint firstItem="XzM-xE-Zed" firstAttribute="leading" secondItem="ygn-yN-dmB" secondAttribute="leading" id="l9b-33-klH"/>
+                            <constraint firstAttribute="bottom" secondItem="XzM-xE-Zed" secondAttribute="bottom" id="t51-0l-fys"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ygn-yN-dmB"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="XzM-xE-Zed" id="esv-Dx-3fA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EXo-Ua-PXZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3575.5395683453239" y="723.6180904522613"/>
+        </scene>
+        <!--Facebook View Controller-->
+        <scene sceneID="qhD-XK-uRx">
+            <objects>
+                <viewController id="5Sl-wA-LIJ" customClass="FacebookViewController" customModule="TheSeven7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yhZ-9C-lPH">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1120"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yqv-Ry-VbX">
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="1120"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yqv-Ry-VbX" firstAttribute="top" secondItem="uKk-tv-8FH" secondAttribute="top" id="3YZ-vo-WXI"/>
+                            <constraint firstItem="yqv-Ry-VbX" firstAttribute="leading" secondItem="uKk-tv-8FH" secondAttribute="leading" id="BYw-UP-PFo"/>
+                            <constraint firstAttribute="bottom" secondItem="yqv-Ry-VbX" secondAttribute="bottom" id="Z2P-da-hVl"/>
+                            <constraint firstItem="yqv-Ry-VbX" firstAttribute="trailing" secondItem="uKk-tv-8FH" secondAttribute="trailing" id="yNN-f3-vqp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uKk-tv-8FH"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="yqv-Ry-VbX" id="2b4-Cn-WwD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wO7-ml-gM7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4343.8848920863311" y="725.6281407035176"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="iuH-HG-JWR">
@@ -837,10 +903,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="e6M-C7-A4e" secondAttribute="bottom" id="36V-va-vWo"/>
                             <constraint firstItem="e6M-C7-A4e" firstAttribute="trailing" secondItem="gwB-YJ-VeX" secondAttribute="trailing" id="86m-oL-KXO"/>
                             <constraint firstAttribute="bottom" secondItem="e6M-C7-A4e" secondAttribute="bottom" id="9ti-Vt-ukg"/>
+                            <constraint firstItem="e6M-C7-A4e" firstAttribute="trailing" secondItem="gwB-YJ-VeX" secondAttribute="trailing" id="EbC-0v-gxq"/>
+                            <constraint firstItem="e6M-C7-A4e" firstAttribute="leading" secondItem="gwB-YJ-VeX" secondAttribute="leading" id="FWA-WV-pIG"/>
                             <constraint firstItem="e6M-C7-A4e" firstAttribute="leading" secondItem="gwB-YJ-VeX" secondAttribute="leading" id="GPq-Mz-8Cg"/>
+                            <constraint firstItem="e6M-C7-A4e" firstAttribute="top" secondItem="gwB-YJ-VeX" secondAttribute="top" constant="1" id="GhU-x9-SCK"/>
                             <constraint firstItem="e6M-C7-A4e" firstAttribute="top" secondItem="gwB-YJ-VeX" secondAttribute="top" constant="1" id="NiS-Vp-A8O"/>
+                            <constraint firstItem="e6M-C7-A4e" firstAttribute="leading" secondItem="gwB-YJ-VeX" secondAttribute="leading" id="SAn-zu-jGH"/>
+                            <constraint firstItem="e6M-C7-A4e" firstAttribute="trailing" secondItem="gwB-YJ-VeX" secondAttribute="trailing" id="gOi-Ey-cM9"/>
+                            <constraint firstItem="e6M-C7-A4e" firstAttribute="top" secondItem="gwB-YJ-VeX" secondAttribute="top" id="rWV-Bk-3f2"/>
+                            <constraint firstAttribute="bottom" secondItem="e6M-C7-A4e" secondAttribute="bottom" constant="1" id="spN-GU-pzj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gwB-YJ-VeX"/>
                     </view>

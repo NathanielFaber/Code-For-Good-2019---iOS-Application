@@ -16,6 +16,8 @@
 		1F9B5806233610E5008022C5 /* ToddlerGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9B5805233610E5008022C5 /* ToddlerGamesViewController.swift */; };
 		535B991304E158DB43C5A350 /* Pods_TheSeven7Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2640FD50BF0C9CE6D982906 /* Pods_TheSeven7Tests.framework */; };
 		7B6B1A208076851F4364E4ED /* Pods_TheSeven7.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0AB2674D0FB62D0B53EEF8 /* Pods_TheSeven7.framework */; };
+		AB3C7478233616A60048A75A /* InstagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3C7477233616A60048A75A /* InstagramViewController.swift */; };
+		AB3C747A233617D30048A75A /* FacebookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3C7479233617D30048A75A /* FacebookViewController.swift */; };
 		AB8A63F623359E9100BC2D7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8A63F523359E9100BC2D7A /* AppDelegate.swift */; };
 		AB8A63F823359E9100BC2D7A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8A63F723359E9100BC2D7A /* MainViewController.swift */; };
 		AB8A63FB23359E9100BC2D7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB8A63F923359E9100BC2D7A /* Main.storyboard */; };
@@ -60,6 +62,8 @@
 		96E6D1BD19EC718E45A7B1B0 /* Pods-TheSeven7Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheSeven7Tests.release.xcconfig"; path = "Target Support Files/Pods-TheSeven7Tests/Pods-TheSeven7Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9D0AB2674D0FB62D0B53EEF8 /* Pods_TheSeven7.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheSeven7.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2640FD50BF0C9CE6D982906 /* Pods_TheSeven7Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheSeven7Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB3C7477233616A60048A75A /* InstagramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramViewController.swift; sourceTree = "<group>"; };
+		AB3C7479233617D30048A75A /* FacebookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookViewController.swift; sourceTree = "<group>"; };
 		AB8A63F223359E9100BC2D7A /* TheSeven7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheSeven7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8A63F523359E9100BC2D7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB8A63F723359E9100BC2D7A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -152,12 +156,11 @@
 				AB8A64232335A10500BC2D7A /* ParentViewController.swift */,
 				1F828EAC2335A8C200A93A77 /* AgeSelectionViewController.swift */,
 				AB8A63F923359E9100BC2D7A /* Main.storyboard */,
-<<<<<<< Updated upstream
+				AB3C7479233617D30048A75A /* FacebookViewController.swift */,
+				AB3C7477233616A60048A75A /* InstagramViewController.swift */,
 				F5131F462336107D00F3F0E8 /* TwitterViewController.swift */,
-=======
 				1F9B5805233610E5008022C5 /* ToddlerGamesViewController.swift */,
 				1F9B580323360F90008022C5 /* GamesViewController.swift */,
->>>>>>> Stashed changes
 				ABB984E72335FAD2006801E8 /* ReferralsViewController.swift */,
 				ABB984E52335EFB9006801E8 /* ResourcesViewController.swift */,
 				1F828EB02335D38600A93A77 /* AdminViewController.swift */,
@@ -434,6 +437,7 @@
 			files = (
 				1F828EB12335D38600A93A77 /* AdminViewController.swift in Sources */,
 				AB8A63F823359E9100BC2D7A /* MainViewController.swift in Sources */,
+				AB3C7478233616A60048A75A /* InstagramViewController.swift in Sources */,
 				F5131F472336107D00F3F0E8 /* TwitterViewController.swift in Sources */,
 				AB8A63F623359E9100BC2D7A /* AppDelegate.swift in Sources */,
 				ABB984E62335EFB9006801E8 /* ResourcesViewController.swift in Sources */,
@@ -441,6 +445,7 @@
 				1F9B5806233610E5008022C5 /* ToddlerGamesViewController.swift in Sources */,
 				1F828EAD2335A8C200A93A77 /* AgeSelectionViewController.swift in Sources */,
 				ABB984E82335FAD2006801E8 /* ReferralsViewController.swift in Sources */,
+				AB3C747A233617D30048A75A /* FacebookViewController.swift in Sources */,
 				AB8A64242335A10500BC2D7A /* ParentViewController.swift in Sources */,
 				1F828EAF2335AA5200A93A77 /* ParentPasswordViewController.swift in Sources */,
 				1F828EB32335EBEC00A93A77 /* AdminLoginViewController.swift in Sources */,
