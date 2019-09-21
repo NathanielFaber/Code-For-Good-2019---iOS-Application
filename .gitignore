@@ -23,6 +23,8 @@ DerivedData/
 !default.perspectivev3
 
 *games.json
+*password.json
+*temp.py
 
 ## Gcc Patch
 /*.gcno

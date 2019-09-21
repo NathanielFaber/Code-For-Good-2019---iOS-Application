@@ -3,18 +3,30 @@ import json
 import time
 app = Flask(__name__)
 
+REFERRALS  = "referral-links.json"
+REFERRAL_URL = "url"
 GAMES_PATH = "games.json"
+PASSW_PATH = "password.json"
 GAMES_URL_KEYWORD = 'url'
 GAMES_USAGE_KEYWORD = 'usage'
 
-# Returns a dictionary formatted by the json file
-def parse_json_file(path):
-    return json.load(open(path))
 
-# Overwrites a json file with the given dictionary
-def write_json_file(data, path):
-    with open(path, "w") as write_file:
-        json.dump(data, write_file)
+#### Retrieve Password
+
+@app.route('/parentpassword')
+def get_pass():
+    # Retrieves the current parent password
+    password = parse_json_file(PASSW_PATH)
+    return jsonify(password)
+
+@app.route('/parentpassword/change/<new_pass>')
+def change_pass(new_pass):
+    password = parse_json_file(PASSW_PATH)
+
+
+
+####
+
 
 @app.route('/games')
 def get_games():
@@ -37,7 +49,7 @@ def remove_game(game_name):
         del games[game_name]
 
     write_json_file(games, GAMES_PATH)
-    
+
     return "VErryYYy GooOd"
 
 @app.route('/games/add/<game_name>/<game_url>')
@@ -79,5 +91,26 @@ def get_usage_statistic(game_name):
         return
     return games[game_name][GAMES_USAGE_KEYWORD]
     
+#### Retrieving referral URL data
+def parse_json_file(path):
+    return json.load(open(path))
+
+@app.route('/referrals')
+def parse():
+    # Sends a JSON response to the browser
+    referrals = parse_json_file(REFERRALS)
+    return jsonify(referrals)
+
+@app.route('/referrals/get/<referral_name>')
+def get_referral_link(referral_name):
+    # Retrieves the link for a given referral_name
+    referrals = parse_json_file(REFERRALS)
+    return referrals[referral_name][REFERRAL_URL]
+
+# Overwrites a json file with the given dictionary
+def write_json_file(data, path):
+    with open(path, "w") as write_file:
+        json.dump(data, write_file)
+
 if __name__ == '__main__':
     app.run()
