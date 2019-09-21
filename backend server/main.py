@@ -1,5 +1,6 @@
 from flask import Flask, jsonify
 import json
+import time
 app = Flask(__name__)
 
 GAMES_PATH = "games.json"
@@ -47,10 +48,36 @@ def add_game(game_name, game_url):
     if games.get(game_name) is None:
         games[game_name] = {}
     games[game_name][GAMES_URL_KEYWORD] = game_url
+    games[game_name][GAMES_USAGE_KEYWORD] = "0"
     
     write_json_file(games, GAMES_PATH)
 
     return "VEry GOOD"
 
+@app.route('/games/update/<game_name>/<usage_time>')
+def update_usage_statistic(game_name, usage_time):
+    # Adds to the usage time of a given game
+    games = parse_json_file(GAMES_PATH)
+
+    if games.get(game_name) is None:
+        return "VeRryY BAaaAd"
+
+    current_usage = int(games[game_name][GAMES_USAGE_KEYWORD])
+    current_usage += int(usage_time)
+    games[game_name][GAMES_USAGE_KEYWORD] = str(current_usage)
+
+    write_json_file(games, GAMES_PATH)
+
+    return "VeRrrY GooDO"
+
+@app.route('/games/stats/<game_name>')
+def get_usage_statistic(game_name):
+    # Returns the usage time of a given game
+    games = parse_json_file(GAMES_PATH)
+
+    if games.get(game_name) is None:
+        return
+    return games[game_name][GAMES_USAGE_KEYWORD]
+    
 if __name__ == '__main__':
     app.run()
