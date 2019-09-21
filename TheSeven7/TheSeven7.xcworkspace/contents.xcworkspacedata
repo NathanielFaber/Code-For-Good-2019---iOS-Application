@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:TheSeven7/YoutubeViewController.swift">
+   </FileRef>
+   <FileRef
       location = "group:TheSeven7.xcodeproj">
    </FileRef>
    <FileRef
