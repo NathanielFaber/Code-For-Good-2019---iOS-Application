@@ -18,6 +18,7 @@ class ToddlerGamesViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBOutlet weak var aa: UIView!
     @IBAction func trainGame(_ sender: Any) {
         urlString = "https://www.happyclicks.net/touch-tap-games/baby_games_train.php"
         performSegue(withIdentifier: "gameSegue", sender: self)
