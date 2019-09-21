@@ -1,5 +1,6 @@
 from flask import Flask, jsonify
 import json
+import time
 app = Flask(__name__)
 
 GAMES_PATH = "games.json"
@@ -8,6 +9,11 @@ GAMES_URL_KEYWORD = 'url'
 GAMES_USAGE_KEYWORD = 'usage'
 
 # Returns a dictionary formatted by the json file
+class parentPassword:
+    def __init__(self,password,timeofchange):
+        self.password = password
+        self.timeofchange = timeofchange
+
 def parse_json_file(path):
     return json.load(open(path))
 
@@ -27,9 +33,13 @@ def get_pass():
 
 @app.route('/parentpassword/change/<new_pass>')
 def change_pass(new_pass):
-    password = parse_json_file(PASSW_PATH)
+    passtoAdd = parentPassword(new_pass, time.time())
+    currentlist = parse_json_file(PASSW_PATH)
+    currentlist.append(passtoAdd)
 
+    write_json_file(currentlist, PASSW_PATH)
 
+    return "New Password set to " + passtoAdd.password
 
 ####
 
