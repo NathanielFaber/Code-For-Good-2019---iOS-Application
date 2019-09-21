@@ -11,10 +11,6 @@ PASSW_TIMEDIFF = "timediff"
 jsonUtils = JUtil()
 
 class PasswordManager:
-    def __init__(self,password,timeofchange):
-        self.password = password
-        self.timeofchange = timeofchange
-
     def get_pass(self):
         # Retrieves the current parent password
         password = jsonUtils.parse_json_file(PASSW_PATH)
@@ -37,4 +33,4 @@ class PasswordManager:
 
         jsonUtils.write_json_file(currentlist, PASSW_PATH)
 
-        return "Time Diff is " + currentlist['timediff']
+        return "Time Diff is " + str(currentlist['timediff'])

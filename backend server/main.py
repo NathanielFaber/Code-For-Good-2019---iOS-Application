@@ -16,13 +16,6 @@ REFERRALS  = "referral-links.json"
 REFERRAL_URL = "url"
 PASSW_PATH = "password.json"
 
-# Returns a dictionary formatted by the json file
-class parentPassword:
-    def __init__(self,password,timeofchange):
-        self.password = password
-        self.timeofchange = timeofchange
-
-
 #### Retrieve Password
 @app.route('/parentpassword')
 def get_pass():
