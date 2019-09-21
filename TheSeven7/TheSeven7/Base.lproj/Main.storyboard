@@ -161,14 +161,14 @@
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vcC-gP-ede" customClass="HoshiTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="200" y="524.5" width="434" height="145"/>
-                                <color key="backgroundColor" red="0.6588235294117647" green="0.76470588235294112" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.6588235294" green="0.76470588240000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="145" id="Iw6-0T-DqZ"/>
                                     <constraint firstAttribute="width" constant="434" id="n25-8d-N8R"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="120"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert" returnKeyType="continue"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert" returnKeyType="continue" secureTextEntry="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
                                         <color key="value" red="0.73238753190000005" green="0.37912556949999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -182,23 +182,24 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXS-3D-vsd">
-                                <rect key="frame" x="200" y="449" width="307" height="54"/>
+                                <rect key="frame" x="263.5" y="250" width="307" height="54"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.6588235294117647" green="0.76470588235294112" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="vcC-gP-ede" firstAttribute="top" secondItem="JXS-3D-vsd" secondAttribute="bottom" constant="21.5" id="36U-mY-xe9"/>
+                            <constraint firstItem="JXS-3D-vsd" firstAttribute="centerX" secondItem="Oho-ja-K0u" secondAttribute="centerX" id="3cD-Vl-Y0Y"/>
+                            <constraint firstItem="vcC-gP-ede" firstAttribute="top" secondItem="JXS-3D-vsd" secondAttribute="bottom" constant="220.5" id="40D-5c-Hwg"/>
                             <constraint firstItem="vcC-gP-ede" firstAttribute="centerX" secondItem="Oho-ja-K0u" secondAttribute="centerX" id="mdv-J7-ya7"/>
                             <constraint firstItem="vcC-gP-ede" firstAttribute="centerY" secondItem="Oho-ja-K0u" secondAttribute="centerY" id="qzt-Lb-rPA"/>
-                            <constraint firstItem="JXS-3D-vsd" firstAttribute="leading" secondItem="oZS-tj-WZY" secondAttribute="leading" constant="200" id="yKH-vN-jce"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oZS-tj-WZY"/>
                     </view>
                     <connections>
                         <outlet property="passwordTextField" destination="vcC-gP-ede" id="CpA-Ht-Om5"/>
+                        <segue destination="vUm-5h-zbc" kind="show" identifier="password" id="LW4-YG-PSE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9ws-ps-72J" userLabel="First Responder" sceneMemberID="firstResponder"/>
