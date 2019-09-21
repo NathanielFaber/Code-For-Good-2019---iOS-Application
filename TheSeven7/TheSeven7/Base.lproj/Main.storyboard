@@ -168,7 +168,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="120"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert" returnKeyType="continue"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert" returnKeyType="continue" secureTextEntry="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
                                         <color key="value" red="0.73238753190000005" green="0.37912556949999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -181,8 +181,8 @@
                                     <outlet property="delegate" destination="x6W-Ye-Vna" id="ObI-LK-e7f"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXS-3D-vsd">
-                                <rect key="frame" x="200" y="449" width="307" height="54"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Enter Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXS-3D-vsd">
+                                <rect key="frame" x="264" y="447" width="307" height="54"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
