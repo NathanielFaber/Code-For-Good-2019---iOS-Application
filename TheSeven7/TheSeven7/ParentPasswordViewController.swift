@@ -13,6 +13,8 @@ class ParentPasswordViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var passwordTextField: HoshiTextField!
    
+    let password = "1234"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         passwordTextField.delegate = self
@@ -29,15 +31,12 @@ class ParentPasswordViewController: UIViewController, UITextFieldDelegate {
         return newLength <= 4
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if (passwordTextField.text == password) {
+            performSegue(withIdentifier: "password", sender: self)
+        }
+        passwordTextField.resignFirstResponder()
+        return true
     }
-    */
-
+    
 }
