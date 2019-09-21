@@ -20,17 +20,17 @@ class PasswordManager:
         # Grab current password data
         currentlist = jsonUtils.parse_json_file(PASSW_PATH)
         currentlist['password'] = new_pass  # change
-        currentlist['timeofchange'] = time.gmtime() # reset time since last change 
+        currentlist['timeofchange'] = time.gmtime() # reset time since last change
 
         jsonUtils.write_json_file(currentlist, PASSW_PATH)
 
         return "New Password set to " + currentlist['password']
 
     def get_time_diff(self):
-        #calculates the time since the last time the password was changed 
+        #calculates the time since the last time the password was changed
         currentlist = jsonUtils.parse_json_file(PASSW_PATH)
         oldtime = currentlist['timeofchange']
         # newtime = time.time()
         # currentlist['timediff'] = newtime - oldtime
 
-        return time.strftime("%c", ts)
+        return time.strftime("%c", ts) # convert to a readable time format 
