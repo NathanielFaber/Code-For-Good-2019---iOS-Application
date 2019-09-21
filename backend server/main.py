@@ -96,7 +96,7 @@ def remove_referral(referral_name, referral_url):
 @app.route('/referrals/redirect/<referral_name>')
 def redirect_referral_link(referral_name):
     # Redirects the user to the given link
-    return referralsManager.redirect(referral_name)
+    return referralsManager.redirect_referral_link(referral_name)
 
 if __name__ == '__main__':
     app.run()
