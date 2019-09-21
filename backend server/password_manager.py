@@ -10,7 +10,7 @@ PASSW_TIMEDIFF = "timediff"
 
 jsonUtils = JUtil()
 
-class parentPassword:
+class PasswordManager:
     def __init__(self,password,timeofchange):
         self.password = password
         self.timeofchange = timeofchange
@@ -20,11 +20,21 @@ class parentPassword:
         password = jsonUtils.parse_json_file(PASSW_PATH)
         return jsonify(password)
 
-    def change_pass(new_pass):
-        passtoAdd = parentPassword(new_pass, time.time())
+    def change_pass(self, new_pass):
         currentlist = jsonUtils.parse_json_file(PASSW_PATH)
-        currentlist.append(passtoAdd)
+        currentlist['password'] = new_pass
+        currentlist['timeofchange'] = time.time()
 
         jsonUtils.write_json_file(currentlist, PASSW_PATH)
 
-        return "New Password set to " + passtoAdd.password
+        return "New Password set to " + currentlist['password']
+
+    def get_time_diff(self):
+        currentlist = jsonUtils.parse_json_file(PASSW_PATH)
+        oldtime = currentlist['timeofchange']
+        newtime = time.time()
+        currentlist['timediff'] = newtime - oldtime
+
+        jsonUtils.write_json_file(currentlist, PASSW_PATH)
+
+        return "Time Diff is " + currentlist['timediff']
