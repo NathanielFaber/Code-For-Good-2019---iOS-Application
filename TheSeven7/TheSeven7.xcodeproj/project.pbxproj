@@ -22,6 +22,8 @@
 		AB8A640B23359E9300BC2D7A /* TheSeven7Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8A640A23359E9300BC2D7A /* TheSeven7Tests.swift */; };
 		AB8A641623359E9300BC2D7A /* TheSeven7UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8A641523359E9300BC2D7A /* TheSeven7UITests.swift */; };
 		AB8A64242335A10500BC2D7A /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8A64232335A10500BC2D7A /* ParentViewController.swift */; };
+		ABB984E62335EFB9006801E8 /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB984E52335EFB9006801E8 /* ResourcesViewController.swift */; };
+		ABB984E82335FAD2006801E8 /* ReferralsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB984E72335FAD2006801E8 /* ReferralsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		AB8A641523359E9300BC2D7A /* TheSeven7UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheSeven7UITests.swift; sourceTree = "<group>"; };
 		AB8A641723359E9300BC2D7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB8A64232335A10500BC2D7A /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
+		ABB984E52335EFB9006801E8 /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
+		ABB984E72335FAD2006801E8 /* ReferralsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferralsViewController.swift; sourceTree = "<group>"; };
 		BAA27B0515525F5BFB37A218 /* Pods-TheSeven7.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheSeven7.debug.xcconfig"; path = "Target Support Files/Pods-TheSeven7/Pods-TheSeven7.debug.xcconfig"; sourceTree = "<group>"; };
 		BEA935F86EA1331F6540DB45 /* Pods_TheSeven7UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheSeven7UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -142,6 +146,8 @@
 				AB8A64232335A10500BC2D7A /* ParentViewController.swift */,
 				1F828EAC2335A8C200A93A77 /* AgeSelectionViewController.swift */,
 				AB8A63F923359E9100BC2D7A /* Main.storyboard */,
+				ABB984E72335FAD2006801E8 /* ReferralsViewController.swift */,
+				ABB984E52335EFB9006801E8 /* ResourcesViewController.swift */,
 				1F828EB02335D38600A93A77 /* AdminViewController.swift */,
 				AB8A63FC23359E9300BC2D7A /* Assets.xcassets */,
 				AB8A63FE23359E9300BC2D7A /* LaunchScreen.storyboard */,
@@ -417,7 +423,9 @@
 				1F828EB12335D38600A93A77 /* AdminViewController.swift in Sources */,
 				AB8A63F823359E9100BC2D7A /* MainViewController.swift in Sources */,
 				AB8A63F623359E9100BC2D7A /* AppDelegate.swift in Sources */,
+				ABB984E62335EFB9006801E8 /* ResourcesViewController.swift in Sources */,
 				1F828EAD2335A8C200A93A77 /* AgeSelectionViewController.swift in Sources */,
+				ABB984E82335FAD2006801E8 /* ReferralsViewController.swift in Sources */,
 				AB8A64242335A10500BC2D7A /* ParentViewController.swift in Sources */,
 				1F828EAF2335AA5200A93A77 /* ParentPasswordViewController.swift in Sources */,
 				1F828EB32335EBEC00A93A77 /* AdminLoginViewController.swift in Sources */,

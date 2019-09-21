@@ -238,7 +238,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RwO-Yg-Htg" customClass="PMSuperButton" customModule="PMSuperButton">
-                                <rect key="frame" x="235" y="341" width="364" height="130"/>
+                                <rect key="frame" x="30" y="464" width="774" height="193"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.57647058823529407" green="0.43529411764705883" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
@@ -258,15 +258,15 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="butterfly" translatesAutoresizingMaskIntoConstraints="NO" id="qis-uN-CV8">
-                                <rect key="frame" x="0.0" y="804" width="417" height="242"/>
+                                <rect key="frame" x="-35" y="124" width="473" height="270"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="speech-bubble" translatesAutoresizingMaskIntoConstraints="NO" id="ONl-Sn-FAb">
-                                <rect key="frame" x="338" y="755" width="455" height="219"/>
+                                <rect key="frame" x="331" y="0.0" width="467" height="218"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r41-v1-CGH" customClass="PMSuperButton" customModule="PMSuperButton">
-                                <rect key="frame" x="235" y="501" width="364" height="130"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQR-cZ-IZ4" customClass="PMSuperButton" customModule="PMSuperButton">
+                                <rect key="frame" x="30" y="691" width="774" height="193"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.57647058819999997" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
@@ -282,13 +282,13 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="x6W-Ye-Vna" kind="show" id="5Uv-7C-BGa"/>
+                                    <segue destination="x6W-Ye-Vna" kind="show" id="E6t-lq-g6u"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi there! Who will be using the app today?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJU-5f-uMd">
-                                <rect key="frame" x="405" y="854" width="344" height="20"/>
+                                <rect key="frame" x="386" y="98" width="385" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -309,7 +309,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1374.21875" y="17.578125"/>
+            <point key="canvasLocation" x="1374.1007194244605" y="17.08542713567839"/>
         </scene>
         <!--Parent Password View Controller-->
         <scene sceneID="n70-bb-LEh">
@@ -387,11 +387,11 @@
                                 <color key="selectedImageTintColor" red="0.57647058823529407" green="0.43529411764705883" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
                             </tabBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1DC-mp-K7P" customClass="PMSuperButton" customModule="PMSuperButton">
-                                <rect key="frame" x="235" y="495" width="364" height="130"/>
+                                <rect key="frame" x="20" y="501" width="794" height="202"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.57647058819999997" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
-                                <state key="normal" title="Referals">
+                                <state key="normal" title="Referrals">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -407,7 +407,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fI6-xB-9z4" customClass="PMSuperButton" customModule="PMSuperButton">
-                                <rect key="frame" x="235" y="340" width="364" height="130"/>
+                                <rect key="frame" x="20" y="258" width="794" height="205"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.57647058819999997" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
@@ -433,7 +433,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dX3-A6-Smr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2828.125" y="17.578125"/>
+            <point key="canvasLocation" x="2828.0575539568349" y="17.08542713567839"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uuM-cN-pXV">
@@ -455,7 +455,6 @@
             </objects>
             <point key="canvasLocation" x="608.59375" y="17.578125"/>
         </scene>
-<<<<<<< HEAD
         <!--Navigation Controller-->
         <scene sceneID="CQh-Af-QVf">
             <objects>
@@ -473,37 +472,65 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pqi-MI-rL8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1374.8201438848921" y="-1478.391959798995"/>
-=======
         <!--View Controller-->
         <scene sceneID="88W-Cg-gXm">
             <objects>
-                <viewController id="V9N-9h-oHo" sceneMemberID="viewController">
+                <viewController id="V9N-9h-oHo" customClass="ResourcesViewController" customModule="TheSeven7" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BJG-qJ-t4b">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1120"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vxn-mN-fCB">
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="1120"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vxn-mN-fCB" firstAttribute="trailing" secondItem="dzT-eO-Jzw" secondAttribute="trailing" id="87C-zB-m6v"/>
+                            <constraint firstItem="vxn-mN-fCB" firstAttribute="leading" secondItem="dzT-eO-Jzw" secondAttribute="leading" id="Cw5-Uy-xM4"/>
+                            <constraint firstAttribute="bottom" secondItem="vxn-mN-fCB" secondAttribute="bottom" id="EjC-JA-GoY"/>
+                            <constraint firstItem="vxn-mN-fCB" firstAttribute="top" secondItem="dzT-eO-Jzw" secondAttribute="top" id="n9o-ej-WSJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dzT-eO-Jzw"/>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="vxn-mN-fCB" id="LDy-OS-rOC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="faa-e6-WOs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2128" y="722"/>
+            <point key="canvasLocation" x="2127.3381294964029" y="721.608040201005"/>
         </scene>
-        <!--View Controller-->
+        <!--Referrals View Controller-->
         <scene sceneID="yhK-Vh-NNw">
             <objects>
-                <viewController id="Wqm-28-iua" sceneMemberID="viewController">
+                <viewController id="Wqm-28-iua" customClass="ReferralsViewController" customModule="TheSeven7" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ppX-2v-FcY">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1120"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ucs-HT-w4U">
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="1120"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ucs-HT-w4U" firstAttribute="leading" secondItem="XZs-oY-zhl" secondAttribute="leading" id="1NS-z1-QkZ"/>
+                            <constraint firstItem="Ucs-HT-w4U" firstAttribute="trailing" secondItem="XZs-oY-zhl" secondAttribute="trailing" id="fpY-u3-F92"/>
+                            <constraint firstAttribute="bottom" secondItem="Ucs-HT-w4U" secondAttribute="bottom" id="mBr-UO-GM8"/>
+                            <constraint firstItem="Ucs-HT-w4U" firstAttribute="top" secondItem="XZs-oY-zhl" secondAttribute="top" id="u5i-Rb-Mnm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="XZs-oY-zhl"/>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="Ucs-HT-w4U" id="mnx-Os-9m7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ATr-iH-OZn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2828" y="722"/>
->>>>>>> c6c1a3cc53314d29532c10f7eaef129a4c15df4a
         </scene>
     </scenes>
     <resources>
