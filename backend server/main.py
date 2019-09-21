@@ -1,5 +1,6 @@
 from json_utils import JUtil
 from games_manager import GameManager
+from password_manager import PasswordManager
 from flask import Flask, jsonify, redirect
 import json
 import time
@@ -9,6 +10,7 @@ app = Flask(__name__)
 
 jsonUtils = JUtil()
 gamesManager = GameManager()
+passwordManager = PasswordManager()
 
 REFERRALS  = "referral-links.json"
 REFERRAL_URL = "url"
@@ -19,6 +21,7 @@ class parentPassword:
     def __init__(self,password,timeofchange):
         self.password = password
         self.timeofchange = timeofchange
+
 
 #### Retrieve Password
 @app.route('/parentpassword')
