@@ -1,0 +1,13 @@
+#admin-heading {
+  font-size: 5rem;
+  text-align: center;
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.admin-categories {
+  font-size: 3rem;
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  margin-left: 5vw;
+}
