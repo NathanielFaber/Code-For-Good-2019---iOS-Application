@@ -17,9 +17,10 @@ class PasswordManager:
         return jsonify(password)
 
     def change_pass(self, new_pass):
+        # Grab current password data
         currentlist = jsonUtils.parse_json_file(PASSW_PATH)
-        currentlist['password'] = new_pass
-        currentlist['timeofchange'] = time.gmtime()
+        currentlist['password'] = new_pass  # change
+        currentlist['timeofchange'] = time.gmtime() # reset time since last change 
 
         jsonUtils.write_json_file(currentlist, PASSW_PATH)
 
