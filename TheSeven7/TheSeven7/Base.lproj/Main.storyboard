@@ -806,10 +806,10 @@
             </objects>
             <point key="canvasLocation" x="3569.7841726618708" y="16.582914572864322"/>
         </scene>
-        <!--View Controller-->
+        <!--Youtube View Controller-->
         <scene sceneID="mwE-QT-hJi">
             <objects>
-                <viewController id="G3A-od-dTw" sceneMemberID="viewController">
+                <viewController id="G3A-od-dTw" customClass="YoutubeViewController" customModule="TheSeven7" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Eq-fd-mgE">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1120"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -826,7 +826,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EMe-bD-OIv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4336" y="20"/>
+            <point key="canvasLocation" x="4335.9712230215828" y="19.597989949748744"/>
         </scene>
     </scenes>
     <resources>
