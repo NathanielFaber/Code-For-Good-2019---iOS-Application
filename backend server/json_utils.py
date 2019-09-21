@@ -1,5 +1,6 @@
 import json
 
+# Provides utility functions for reading and writing json files
 class JUtil:
     #### Retrieving referral URL data
     def parse_json_file(self, path):

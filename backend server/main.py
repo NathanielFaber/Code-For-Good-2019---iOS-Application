@@ -1,17 +1,16 @@
 from flask import Flask, jsonify
 from json_utils import JUtil
+from games_manager import GameManager
 import json
 import time
 app = Flask(__name__)
 
 jsonUtils = JUtil()
+gamesManager = GameManager()
 
 REFERRALS  = "referral-links.json"
 REFERRAL_URL = "url"
-GAMES_PATH = "games.json"
 PASSW_PATH = "password.json"
-GAMES_URL_KEYWORD = 'url'
-GAMES_USAGE_KEYWORD = 'usage'
 
 # Returns a dictionary formatted by the json file
 class parentPassword:
@@ -42,65 +41,32 @@ def change_pass(new_pass):
 @app.route('/games')
 def get_games():
     # Retrieves a dictionary of games in the database
-    games = jsonUtils.parse_json_file(GAMES_PATH)
-    return jsonify(games)
+    return gamesManager.get_games()
 
 @app.route('/games/get/<game_name>')
 def get_game_link(game_name):
     # Retrieves the link for a given game_name
-    games = jsonUtils.parse_json_file(GAMES_PATH)
-    return games[game_name][GAMES_URL_KEYWORD]
+    return gamesManager.get_game_link(game_name)
 
 @app.route('/games/remove/<game_name>')
 def remove_game(game_name):
     # Removes a game from the database
-    games = jsonUtils.parse_json_file(GAMES_PATH)
-
-    if game_name in games:
-        del games[game_name]
-
-    jsonUtils.write_json_file(games, GAMES_PATH)
-
-    return "VErryYYy GooOd"
+    return gamesManager.remove_game(game_name)
 
 @app.route('/games/add/<game_name>/<game_url>')
 def add_game(game_name, game_url):
     # Adds or updates a game to the json file
-    games = jsonUtils.parse_json_file(GAMES_PATH)
-
-    if games.get(game_name) is None:
-        games[game_name] = {}
-    games[game_name][GAMES_URL_KEYWORD] = game_url
-    games[game_name][GAMES_USAGE_KEYWORD] = "0"
-
-    jsonUtils.write_json_file(games, GAMES_PATH)
-
-    return "VEry GOOD"
+    return gamesManager.add_game(game_name, game_url)
 
 @app.route('/games/update/<game_name>/<usage_time>')
 def update_usage_statistic(game_name, usage_time):
     # Adds to the usage time of a given game
-    games = jsonUtils.parse_json_file(GAMES_PATH)
-
-    if games.get(game_name) is None:
-        return "VeRryY BAaaAd"
-
-    current_usage = int(games[game_name][GAMES_USAGE_KEYWORD])
-    current_usage += int(usage_time)
-    games[game_name][GAMES_USAGE_KEYWORD] = str(current_usage)
-
-    jsonUtils.write_json_file(games, GAMES_PATH)
-
-    return "VeRrrY GooDO"
+    return gamesManager.update_usage_statistic(game_name, usage_time)
 
 @app.route('/games/stats/<game_name>')
 def get_usage_statistic(game_name):
     # Returns the usage time of a given game
-    games = jsonUtils.parse_json_file(GAMES_PATH)
-
-    if games.get(game_name) is None:
-        return
-    return games[game_name][GAMES_USAGE_KEYWORD]
+    return gamesManager.get_usage_statistic(game_name)
 
 @app.route('/referrals')
 def parse():
