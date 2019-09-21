@@ -22,5 +22,7 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 
+*games.json
+
 ## Gcc Patch
 /*.gcno
