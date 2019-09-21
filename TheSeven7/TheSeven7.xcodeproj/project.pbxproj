@@ -27,7 +27,7 @@
 		AB12BC2A23366222004B9F64 /* grade2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB12BC2923366222004B9F64 /* grade2ViewController.swift */; };
 		AB12BC2C23366502004B9F64 /* sensoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB12BC2B23366502004B9F64 /* sensoryViewController.swift */; };
 		AB12BC3223366FC9004B9F64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB12BC3023366FC9004B9F64 /* Main.storyboard */; };
-		AB12BC3423367676004B9F64 /* YoutubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB12BC3323367676004B9F64 /* YoutubeViewController.swift */; };
+		AB12BC3623367A2F004B9F64 /* YoutubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB12BC3523367A2F004B9F64 /* YoutubeViewController.swift */; };
 		AB3C7478233616A60048A75A /* InstagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3C7477233616A60048A75A /* InstagramViewController.swift */; };
 		AB3C747A233617D30048A75A /* FacebookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3C7479233617D30048A75A /* FacebookViewController.swift */; };
 		AB8A63F623359E9100BC2D7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8A63F523359E9100BC2D7A /* AppDelegate.swift */; };
@@ -84,7 +84,7 @@
 		AB12BC2923366222004B9F64 /* grade2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grade2ViewController.swift; sourceTree = "<group>"; };
 		AB12BC2B23366502004B9F64 /* sensoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sensoryViewController.swift; sourceTree = "<group>"; };
 		AB12BC3123366FC9004B9F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../Downloads/team-7-master 3/TheSeven7/TheSeven7/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
-		AB12BC3323367676004B9F64 /* YoutubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = YoutubeViewController.swift; path = "/Users/aylinevillegas/cfg/team-7/TheSeven7/TheSeven7/YoutubeViewController.swift"; sourceTree = "<absolute>"; };
+		AB12BC3523367A2F004B9F64 /* YoutubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeViewController.swift; sourceTree = "<group>"; };
 		AB3C7477233616A60048A75A /* InstagramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramViewController.swift; sourceTree = "<group>"; };
 		AB3C7479233617D30048A75A /* FacebookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookViewController.swift; sourceTree = "<group>"; };
 		AB8A63F223359E9100BC2D7A /* TheSeven7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheSeven7.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,7 +173,6 @@
 		AB8A63F423359E9100BC2D7A /* TheSeven7 */ = {
 			isa = PBXGroup;
 			children = (
-				AB12BC3323367676004B9F64 /* YoutubeViewController.swift */,
 				AB12BC3023366FC9004B9F64 /* Main.storyboard */,
 				AB12BC2B23366502004B9F64 /* sensoryViewController.swift */,
 				AB12BC2723366209004B9F64 /* grade1ViewController.swift */,
@@ -202,6 +201,7 @@
 				AB8A640123359E9300BC2D7A /* Info.plist */,
 				1F828EAE2335AA5200A93A77 /* ParentPasswordViewController.swift */,
 				1F828EB22335EBEC00A93A77 /* AdminLoginViewController.swift */,
+				AB12BC3523367A2F004B9F64 /* YoutubeViewController.swift */,
 			);
 			path = TheSeven7;
 			sourceTree = "<group>";
@@ -480,7 +480,7 @@
 				AB12BC1E23365732004B9F64 /* ColoringBookViewController.swift in Sources */,
 				ABB984E62335EFB9006801E8 /* ResourcesViewController.swift in Sources */,
 				AB12BC1A233655A1004B9F64 /* DressUpViewController.swift in Sources */,
-				AB12BC3423367676004B9F64 /* YoutubeViewController.swift in Sources */,
+				AB12BC3623367A2F004B9F64 /* YoutubeViewController.swift in Sources */,
 				1F9B580423360F90008022C5 /* GamesViewController.swift in Sources */,
 				1F9B5806233610E5008022C5 /* ToddlerGamesViewController.swift in Sources */,
 				AB12BC2223365778004B9F64 /* CorndogsViewController.swift in Sources */,
