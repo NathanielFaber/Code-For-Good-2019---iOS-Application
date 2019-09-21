@@ -9,7 +9,7 @@ jsonUtils = JUtil()
 
 # Cleaner look for the referrals code, keeping it all in one place
 
-class RefreralManager:
+class ReferralManager:
     # Sends a JSON response to the browser
     def get_referral(self):
         referrals = jsonUtils.parse_json_file(REFERRALS)
