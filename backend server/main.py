@@ -1,8 +1,10 @@
-from flask import Flask, jsonify
 from json_utils import JUtil
 from games_manager import GameManager
+from flask import Flask, jsonify, redirect
 import json
 import time
+import os
+
 app = Flask(__name__)
 
 jsonUtils = JUtil()
@@ -79,6 +81,17 @@ def get_referral_link(referral_name):
     # Retrieves the link for a given referral_name
     referrals = jsonUtils.parse_json_file(REFERRALS)
     return referrals[referral_name][REFERRAL_URL]
+
+@app.route('/referrals/redirect/<referral_name>')
+def redirect_referral_link(referral_name):
+    referrals = parse_json_file(REFERRALS)
+    link = referrals[referral_name][REFERRAL_URL]
+    return redirect(link)
+
+# Overwrites a json file with the given dictionary
+def write_json_file(data, path):
+    with open(path, "w") as write_file:
+        json.dump(data, write_file)
 
 if __name__ == '__main__':
     app.run()
