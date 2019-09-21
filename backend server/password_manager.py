@@ -33,4 +33,4 @@ class PasswordManager:
 
         jsonUtils.write_json_file(currentlist, PASSW_PATH)
 
-        return "Time Diff is " + str(currentlist['timediff'])
+        return currentlist['timediff']
