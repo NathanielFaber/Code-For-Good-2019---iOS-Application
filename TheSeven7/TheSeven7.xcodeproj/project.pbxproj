@@ -10,6 +10,7 @@
 		0B56620568BA899532C69C0F /* Pods_TheSeven7UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA935F86EA1331F6540DB45 /* Pods_TheSeven7UITests.framework */; };
 		1F828EAD2335A8C200A93A77 /* AgeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F828EAC2335A8C200A93A77 /* AgeSelectionViewController.swift */; };
 		1F828EAF2335AA5200A93A77 /* ParentPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F828EAE2335AA5200A93A77 /* ParentPasswordViewController.swift */; };
+		1F828EB12335D38600A93A77 /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F828EB02335D38600A93A77 /* AdminViewController.swift */; };
 		535B991304E158DB43C5A350 /* Pods_TheSeven7Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2640FD50BF0C9CE6D982906 /* Pods_TheSeven7Tests.framework */; };
 		7B6B1A208076851F4364E4ED /* Pods_TheSeven7.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0AB2674D0FB62D0B53EEF8 /* Pods_TheSeven7.framework */; };
 		AB8A63F623359E9100BC2D7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8A63F523359E9100BC2D7A /* AppDelegate.swift */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		1F828EAC2335A8C200A93A77 /* AgeSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeSelectionViewController.swift; sourceTree = "<group>"; };
 		1F828EAE2335AA5200A93A77 /* ParentPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentPasswordViewController.swift; sourceTree = "<group>"; };
+		1F828EB02335D38600A93A77 /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
 		3CDE58E63A8E10378031129E /* Pods-TheSeven7UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheSeven7UITests.release.xcconfig"; path = "Target Support Files/Pods-TheSeven7UITests/Pods-TheSeven7UITests.release.xcconfig"; sourceTree = "<group>"; };
 		3D65736BE466911C8A237BE0 /* Pods-TheSeven7Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheSeven7Tests.debug.xcconfig"; path = "Target Support Files/Pods-TheSeven7Tests/Pods-TheSeven7Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		72AFFFA2350458209368F3BC /* Pods-TheSeven7UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheSeven7UITests.debug.xcconfig"; path = "Target Support Files/Pods-TheSeven7UITests/Pods-TheSeven7UITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -105,7 +107,6 @@
 				72AFFFA2350458209368F3BC /* Pods-TheSeven7UITests.debug.xcconfig */,
 				3CDE58E63A8E10378031129E /* Pods-TheSeven7UITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -139,6 +140,7 @@
 				AB8A64232335A10500BC2D7A /* ParentViewController.swift */,
 				1F828EAC2335A8C200A93A77 /* AgeSelectionViewController.swift */,
 				AB8A63F923359E9100BC2D7A /* Main.storyboard */,
+				1F828EB02335D38600A93A77 /* AdminViewController.swift */,
 				AB8A63FC23359E9300BC2D7A /* Assets.xcassets */,
 				AB8A63FE23359E9300BC2D7A /* LaunchScreen.storyboard */,
 				AB8A640123359E9300BC2D7A /* Info.plist */,
@@ -403,6 +405,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F828EB12335D38600A93A77 /* AdminViewController.swift in Sources */,
 				AB8A63F823359E9100BC2D7A /* ViewController.swift in Sources */,
 				AB8A63F623359E9100BC2D7A /* AppDelegate.swift in Sources */,
 				1F828EAD2335A8C200A93A77 /* AgeSelectionViewController.swift in Sources */,
