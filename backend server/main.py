@@ -27,7 +27,7 @@ def get_game_link(game_name):
     games = parse_json_file(GAMES_PATH)
     return games[game_name][GAMES_URL_KEYWORD]
 
-@app.route('/games/get/<game_name>')
+@app.route('/games/remove/<game_name>')
 def remove_game(game_name):
     # Removes a game from the database
     games = parse_json_file(GAMES_PATH)
