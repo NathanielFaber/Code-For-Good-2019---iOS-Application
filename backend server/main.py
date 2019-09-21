@@ -28,7 +28,8 @@ def change_pass(new_pass):
 def get_time_diff():
     # Amount of time since you've changed your password
     return passwordManager.get_time_diff()
-####
+
+###########################################################
 
 @app.route('/games')
 def get_games():
@@ -69,6 +70,8 @@ def get_age_range(game_name):
 def set_age_range(game_name, age):
     # Sets the age of a given game
     return gamesManager.set_age_range(game_name, age)
+
+###############################################################
 
 @app.route('/referrals')
 def get_referral():
