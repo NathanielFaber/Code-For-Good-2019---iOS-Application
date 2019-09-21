@@ -1,6 +1,6 @@
 import json
 
-class json_util:
+class JUtil:
     #### Retrieving referral URL data
     def parse_json_file(self, path):
         return json.load(open(path))
