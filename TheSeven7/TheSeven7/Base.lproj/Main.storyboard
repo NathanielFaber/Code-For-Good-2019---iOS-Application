@@ -37,6 +37,9 @@
                                         <color key="value" red="0.57647058819999997" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="6vk-ot-rrg" kind="show" id="TUx-pb-rM1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wA-4U-1rV" customClass="PMSuperButton" customModule="PMSuperButton">
                                 <rect key="frame" x="65" y="465" width="705" height="151"/>
@@ -54,6 +57,9 @@
                                         <color key="value" red="0.73238753190000005" green="0.37912556949999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="o22-BE-ZBr" kind="show" id="Xo1-Ue-vza"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBh-gn-caL" customClass="PMSuperButton" customModule="PMSuperButton">
                                 <rect key="frame" x="65" y="624" width="705" height="151"/>
@@ -71,6 +77,9 @@
                                         <color key="value" red="0.73238753190000005" green="0.37912556949999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="1nB-AJ-FTI" kind="show" id="3oX-Hj-NQK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aps-Fk-lnA" customClass="PMSuperButton" customModule="PMSuperButton">
                                 <rect key="frame" x="65" y="783" width="705" height="151"/>
@@ -88,6 +97,9 @@
                                         <color key="value" red="0.73238753190000005" green="0.37912556949999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="CaR-GS-Vt1" kind="show" id="J52-sZ-VKi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Frj-JQ-BwD" customClass="PMSuperButton" customModule="PMSuperButton">
                                 <rect key="frame" x="65" y="942" width="705" height="151"/>
@@ -105,6 +117,9 @@
                                         <color key="value" red="0.73238753190000005" green="0.37912556949999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="4m6-YJ-0OQ" kind="show" id="HeF-jd-P89"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="butterfly" translatesAutoresizingMaskIntoConstraints="NO" id="UdY-uG-fy7">
                                 <rect key="frame" x="0.0" y="88" width="370" height="179"/>
@@ -129,7 +144,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vDN-6N-MM0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="633.8129496402878" y="721.608040201005"/>
+            <point key="canvasLocation" x="608" y="722"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="f2b-Nw-eob">
+            <objects>
+                <viewController id="o22-BE-ZBr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yzm-C3-fpt">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1120"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.72953563928604126" green="0.79717308282852173" blue="0.67448437213897705" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="f6p-kt-Hgq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fe0-ov-SAX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="608" y="1459"/>
         </scene>
         <!--Admin View Controller-->
         <scene sceneID="wPj-IG-Y0b">
@@ -311,6 +341,21 @@
             </objects>
             <point key="canvasLocation" x="1374.1007194244605" y="17.08542713567839"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="rbH-S0-DAx">
+            <objects>
+                <viewController id="6vk-ot-rrg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VAn-3W-ZAU">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1120"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.72953563928604126" green="0.79717308282852173" blue="0.67448437213897705" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="tE6-CL-Wwp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m8P-37-Svh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1375" y="722"/>
+        </scene>
         <!--Parent Password View Controller-->
         <scene sceneID="n70-bb-LEh">
             <objects>
@@ -375,17 +420,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1120"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tabBar contentMode="TopLeft" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DEi-b9-qUr">
-                                <rect key="frame" x="0.0" y="1071" width="834" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" red="0.57647058823529407" green="0.43529411764705883" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
-                                <rect key="contentStretch" x="0.20000000000000001" y="0.0" width="0.94999999999999996" height="1"/>
-                                <items>
-                                    <tabBarItem id="nEZ-WF-oxn"/>
-                                    <tabBarItem systemItem="more" id="paF-bz-kwT"/>
-                                </items>
-                                <color key="selectedImageTintColor" red="0.57647058823529407" green="0.43529411764705883" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
-                            </tabBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1DC-mp-K7P" customClass="PMSuperButton" customModule="PMSuperButton">
                                 <rect key="frame" x="20" y="501" width="794" height="202"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -444,6 +478,7 @@
                         <rect key="frame" x="0.0" y="24" width="834" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.57647058823529407" green="0.43529411764705883" blue="0.69411764705882351" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.57647058823529407" green="0.43529411764705883" blue="0.69411764705882351" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -483,7 +518,7 @@
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vxn-mN-fCB">
                                 <rect key="frame" x="0.0" y="0.0" width="834" height="1120"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.72953563928604126" green="0.79717308282852173" blue="0.67448437213897705" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -513,7 +548,7 @@
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ucs-HT-w4U">
                                 <rect key="frame" x="0.0" y="0.0" width="834" height="1120"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.72953563928604126" green="0.79717308282852173" blue="0.67448437213897705" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -532,6 +567,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ATr-iH-OZn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2828" y="722"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="iuH-HG-JWR">
+            <objects>
+                <viewController id="1nB-AJ-FTI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="utb-x6-zFX">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1120"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.72953563928604126" green="0.79717308282852173" blue="0.67448437213897705" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="tlf-vK-2Qk"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KGf-Pw-ukW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1374" y="1459"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JAD-pf-hQN">
+            <objects>
+                <viewController id="CaR-GS-Vt1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z7X-Ra-iC7">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1120"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.72953563928604126" green="0.79717308282852173" blue="0.67448437213897705" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="Tl7-vj-uBo"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3fl-vH-jfi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2129" y="1459"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6Xx-ut-4Bo">
+            <objects>
+                <viewController id="4m6-YJ-0OQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WUg-3a-LBZ">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1120"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.72953563928604126" green="0.79717308282852173" blue="0.67448437213897705" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="zEp-ew-QF0"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rZ2-iQ-lqg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="608" y="2183"/>
         </scene>
     </scenes>
     <resources>

@@ -16,7 +16,7 @@ class ResourcesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = URL(string:"https://2048.app/")
+        let url = URL(string:"https://www.chicagocac.org/resources/")
         let request = URLRequest(url: url!)
         webView.loadRequest(request)
 
