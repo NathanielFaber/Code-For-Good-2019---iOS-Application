@@ -30,7 +30,7 @@ class PasswordManager:
         currentlist = jsonUtils.parse_json_file(PASSW_PATH)
         oldtime = currentlist['timeofchange']
 
-        res = oldtime[1] + "/" + oldtime[2] + "/" + oldtime[0]
+        res = str(oldtime[1]) + "/" + str(oldtime[2]) + "/" + str(oldtime[0])
         # [2019, 9, 21, 13, 7, 35, 5, 264, 0]
 
         # newtime = time.time()
