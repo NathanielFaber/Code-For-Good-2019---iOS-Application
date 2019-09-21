@@ -13,7 +13,19 @@ PASSW_PATH = "password.json"
 GAMES_URL_KEYWORD = 'url'
 GAMES_USAGE_KEYWORD = 'usage'
 
+# Returns a dictionary formatted by the json file
+class parentPassword:
+    def __init__(self,password,timeofchange):
+        self.password = password
+        self.timeofchange = timeofchange
 
+def parse_json_file(path):
+    return json.load(open(path))
+
+    # Overwrites a json file with the given dictionary
+    def write_json_file(data, path):
+        with open(path, "w") as write_file:
+            json.dump(data, write_file)
 #### Retrieve Password
 
 @app.route('/parentpassword')
@@ -24,9 +36,13 @@ def get_pass():
 
 @app.route('/parentpassword/change/<new_pass>')
 def change_pass(new_pass):
-    password = parse_json_file(PASSW_PATH)
+    passtoAdd = parentPassword(new_pass, time.time())
+    currentlist = parse_json_file(PASSW_PATH)
+    currentlist.append(passtoAdd)
 
+    write_json_file(currentlist, PASSW_PATH)
 
+    return "New Password set to " + passtoAdd.password
 
 ####
 
@@ -64,7 +80,7 @@ def add_game(game_name, game_url):
         games[game_name] = {}
     games[game_name][GAMES_URL_KEYWORD] = game_url
     games[game_name][GAMES_USAGE_KEYWORD] = "0"
-    
+
     write_json_file(games, GAMES_PATH)
 
     return "VEry GOOD"
@@ -93,7 +109,7 @@ def get_usage_statistic(game_name):
     if games.get(game_name) is None:
         return
     return games[game_name][GAMES_USAGE_KEYWORD]
-    
+
 #### Retrieving referral URL data
 def parse_json_file(path):
     return json.load(open(path))
