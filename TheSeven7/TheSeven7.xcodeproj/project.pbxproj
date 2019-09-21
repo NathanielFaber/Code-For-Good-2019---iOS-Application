@@ -21,6 +21,7 @@
 		AB12BC1E23365732004B9F64 /* ColoringBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB12BC1D23365732004B9F64 /* ColoringBookViewController.swift */; };
 		AB12BC2023365755004B9F64 /* 2048ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB12BC1F23365755004B9F64 /* 2048ViewController.swift */; };
 		AB12BC2223365778004B9F64 /* CorndogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB12BC2123365778004B9F64 /* CorndogsViewController.swift */; };
+		AB12BC2423365D2A004B9F64 /* SnowmanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB12BC2323365D2A004B9F64 /* SnowmanViewController.swift */; };
 		AB3C7478233616A60048A75A /* InstagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3C7477233616A60048A75A /* InstagramViewController.swift */; };
 		AB3C747A233617D30048A75A /* FacebookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3C7479233617D30048A75A /* FacebookViewController.swift */; };
 		AB8A63F623359E9100BC2D7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8A63F523359E9100BC2D7A /* AppDelegate.swift */; };
@@ -72,6 +73,7 @@
 		AB12BC1D23365732004B9F64 /* ColoringBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoringBookViewController.swift; sourceTree = "<group>"; };
 		AB12BC1F23365755004B9F64 /* 2048ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2048ViewController.swift; sourceTree = "<group>"; };
 		AB12BC2123365778004B9F64 /* CorndogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorndogsViewController.swift; sourceTree = "<group>"; };
+		AB12BC2323365D2A004B9F64 /* SnowmanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowmanViewController.swift; sourceTree = "<group>"; };
 		AB3C7477233616A60048A75A /* InstagramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramViewController.swift; sourceTree = "<group>"; };
 		AB3C7479233617D30048A75A /* FacebookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookViewController.swift; sourceTree = "<group>"; };
 		AB8A63F223359E9100BC2D7A /* TheSeven7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheSeven7.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,6 +163,7 @@
 		AB8A63F423359E9100BC2D7A /* TheSeven7 */ = {
 			isa = PBXGroup;
 			children = (
+				AB12BC2323365D2A004B9F64 /* SnowmanViewController.swift */,
 				AB8A63F523359E9100BC2D7A /* AppDelegate.swift */,
 				AB8A63F723359E9100BC2D7A /* MainViewController.swift */,
 				AB8A64232335A10500BC2D7A /* ParentViewController.swift */,
@@ -454,6 +457,7 @@
 				AB12BC1C233656E7004B9F64 /* TrainViewController.swift in Sources */,
 				AB8A63F823359E9100BC2D7A /* MainViewController.swift in Sources */,
 				AB3C7478233616A60048A75A /* InstagramViewController.swift in Sources */,
+				AB12BC2423365D2A004B9F64 /* SnowmanViewController.swift in Sources */,
 				F5131F472336107D00F3F0E8 /* TwitterViewController.swift in Sources */,
 				AB8A63F623359E9100BC2D7A /* AppDelegate.swift in Sources */,
 				AB12BC1E23365732004B9F64 /* ColoringBookViewController.swift in Sources */,
