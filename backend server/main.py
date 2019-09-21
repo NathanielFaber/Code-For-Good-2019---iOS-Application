@@ -46,7 +46,7 @@ def get_time_diff():
 
     jsonUtils.write_json_file(currentlist, PASSW_PATH)
 
-    return "Time Diff is " + currentlist['timediff']
+    return currentlist['timediff']
 ####
 
 
