@@ -7,13 +7,24 @@
 //
 
 import UIKit
+import WebKit
 
 class ResourcesViewController: UIViewController {
 
+    @IBOutlet weak var webView: UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let url = URL(string:"https://2048.app/")
+        let request = URLRequest(url: url!)
+        webView.loadRequest(request)
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
     
 
