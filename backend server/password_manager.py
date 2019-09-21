@@ -1,11 +1,14 @@
 from flask import jsonify
 from json_utils import JUtil
+from datetime import date
+import datetime
 import time
 
 PASSW_PATH = "password.json"
 PASSW = "password"
 PASSW_TIMEOFCHANGE = "timeofchange"
 PASSW_TIMEDIFF = "timediff"
+
 
 jsonUtils = JUtil()
 
@@ -19,8 +22,8 @@ class PasswordManager:
         # Grab current password data
         currentlist = jsonUtils.parse_json_file(PASSW_PATH)
         currentlist['password'] = new_pass  # change
-        currentlist['timeofchange'] = time.gmtime() # reset time since last change
-
+        currentlist['timeofchange'] = time.time() # reset time since last change
+    #    return str(currentlist['timeofchange'])
         jsonUtils.write_json_file(currentlist, PASSW_PATH)
 
         return "New Password set to " + currentlist['password']
@@ -29,11 +32,12 @@ class PasswordManager:
         #calculates the time since the last time the password was changed
         currentlist = jsonUtils.parse_json_file(PASSW_PATH)
         oldtime = currentlist['timeofchange']
-
-        res = str(oldtime[1]) + "/" + str(oldtime[2]) + "/" + str(oldtime[0])
+        # convert from num to date string
+        #res = str(oldtime[1]) + "/" + str(oldtime[2]) + "/" + str(oldtime[0])
         # [2019, 9, 21, 13, 7, 35, 5, 264, 0]
 
         # newtime = time.time()
         # currentlist['timediff'] = newtime - oldtime
-        res = time.strftime("%c", oldtime) # convert to a readable time format
-        return res
+        #res = time.strftime("%c", res) # convert to a readable time format
+        # return oldtime
+        return datetime.datetime.fromtimestamp(oldtime).strftime('%c')
