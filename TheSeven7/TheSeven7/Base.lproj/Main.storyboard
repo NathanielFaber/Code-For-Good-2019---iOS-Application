@@ -136,7 +136,7 @@
             <objects>
                 <viewController id="HaT-Se-n4f" customClass="AdminViewController" customModule="TheSeven7" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sOi-rJ-O5D">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1120"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Parent Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMj-jA-mT2">
@@ -171,18 +171,68 @@
                         <color key="backgroundColor" red="0.72941176470588232" green="0.79607843137254897" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="fvs-H5-AYS"/>
                     </view>
+                    <navigationItem key="navigationItem" id="dNR-Da-1uw">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="axu-wm-nLY">
+                            <connections>
+                                <action selector="onDoneButton:" destination="HaT-Se-n4f" id="NJF-XO-urG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="parentPasswordTextField" destination="WH7-0N-UeW" id="32M-iB-XJo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="11R-en-yTD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1373.3812949640289" y="-702.0100502512563"/>
+            <point key="canvasLocation" x="2128.7769784172665" y="-1478.391959798995"/>
         </scene>
-        <!--View Controller-->
+        <!--Admin Login View Controller-->
+        <scene sceneID="myb-dC-FNY">
+            <objects>
+                <viewController id="eMR-gz-OmS" customClass="AdminLoginViewController" customModule="TheSeven7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rod-MO-T3R">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Admin Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWs-GI-ANa">
+                                <rect key="frame" x="94" y="52" width="132" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NTB-j2-2x6">
+                                <rect key="frame" x="112" y="116" width="96" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="eMR-gz-OmS" id="Z1v-NO-J83"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.72941176470588232" green="0.79607843137254897" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="NTB-j2-2x6" firstAttribute="top" secondItem="iWs-GI-ANa" secondAttribute="bottom" constant="43" id="InI-5B-h5i"/>
+                            <constraint firstItem="NTB-j2-2x6" firstAttribute="leading" secondItem="ihh-4R-iV1" secondAttribute="leading" constant="112" id="SMO-53-zhH"/>
+                            <constraint firstItem="iWs-GI-ANa" firstAttribute="centerX" secondItem="rod-MO-T3R" secondAttribute="centerX" id="a8O-HV-rHe"/>
+                            <constraint firstItem="iWs-GI-ANa" firstAttribute="top" secondItem="ihh-4R-iV1" secondAttribute="top" constant="52" id="jWn-2X-uwk"/>
+                            <constraint firstItem="NTB-j2-2x6" firstAttribute="centerX" secondItem="iWs-GI-ANa" secondAttribute="centerX" id="xYv-dl-bPf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ihh-4R-iV1"/>
+                    </view>
+                    <connections>
+                        <outlet property="adminTextField" destination="NTB-j2-2x6" id="fgh-nC-ldj"/>
+                        <segue destination="zw7-Zv-4dw" kind="show" identifier="adminPassword" id="TBT-1a-is5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Oy-0S-QlP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1375" y="-734"/>
+        </scene>
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TheSeven7" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="TheSeven7" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1120"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -250,7 +300,9 @@
                         <barButtonItem key="rightBarButtonItem" title="Admin" id="vVJ-u0-S5E">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="HaT-Se-n4f" kind="show" id="fgx-Q4-Dc8"/>
+                                <segue destination="eMR-gz-OmS" kind="popoverPresentation" popoverAnchorBarButtonItem="vVJ-u0-S5E" id="eFO-3x-VhM">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -403,6 +455,25 @@
             </objects>
             <point key="canvasLocation" x="608.59375" y="17.578125"/>
         </scene>
+<<<<<<< HEAD
+        <!--Navigation Controller-->
+        <scene sceneID="CQh-Af-QVf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zw7-Zv-4dw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vNy-ES-K3l">
+                        <rect key="frame" x="0.0" y="24" width="834" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HaT-Se-n4f" kind="relationship" relationship="rootViewController" id="QKt-Ay-QX8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pqi-MI-rL8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1374.8201438848921" y="-1478.391959798995"/>
+=======
         <!--View Controller-->
         <scene sceneID="88W-Cg-gXm">
             <objects>
@@ -432,6 +503,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ATr-iH-OZn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2828" y="722"/>
+>>>>>>> c6c1a3cc53314d29532c10f7eaef129a4c15df4a
         </scene>
     </scenes>
     <resources>

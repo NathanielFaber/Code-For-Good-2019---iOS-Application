@@ -40,4 +40,8 @@ class AdminViewController: UIViewController, UITextFieldDelegate {
         let newLength = currentCharacterCount + string.count - range.length
         return newLength <= 4
     }
+    
+    @IBAction func onDoneButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }
