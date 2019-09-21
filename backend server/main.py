@@ -82,6 +82,31 @@ def get_referral_link(referral_name):
     referrals = jsonUtils.parse_json_file(REFERRALS)
     return referrals[referral_name][REFERRAL_URL]
 
+@app.route('/referrals/add/<referral_name>/<referral_url>')
+def add_referral(referral_name, referral_url):
+    # Adds referral URLs received from partner companies
+    referrals = jsonUtils.parse_json_file(REFERRALS)
+
+    if referrals.get(referral_name) is None:
+        referrals[referral_name] = {}
+    referrals[referral_name][REFERRAL_URL] = referral_url
+
+    jsonUtils.write_json_file(referrals, REFERRALS)
+
+    return "i have the power of god and anime on my side"
+
+@app.route('/referrals/remove/<referral_name>/<referral_url>')
+    # Removes a game from the database
+def remove_referral(referral_name, referral_url):
+    referrals = jsonUtils.parse_json_file(REFERRALS)
+
+    if referral_name in referrals:
+        del referrals[referral_name]
+
+    jsonUtils.write_json_file(referrals, REFERRALS)
+
+    return "ahhhhhhhhhhhhhhhhhhhhhh"
+
 @app.route('/referrals/redirect/<referral_name>')
 def redirect_referral_link(referral_name):
     referrals = parse_json_file(REFERRALS)
