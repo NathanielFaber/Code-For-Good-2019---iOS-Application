@@ -13,12 +13,13 @@ class ParentPasswordViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var passwordTextField: HoshiTextField!
    
-    let password = "1234"
+    let password = UserDefaults.standard.string(forKey: "parentPassword")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         passwordTextField.delegate = self
         self.passwordTextField.autocapitalizationType = .allCharacters
+        passwordTextField.addTarget(self, action: #selector(ParentPasswordViewController.textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
@@ -31,12 +32,10 @@ class ParentPasswordViewController: UIViewController, UITextFieldDelegate {
         return newLength <= 4
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    @objc func textFieldDidChange(_ textField: UITextField) {
         if (passwordTextField.text == password) {
             performSegue(withIdentifier: "password", sender: self)
+            passwordTextField.resignFirstResponder()
         }
-        passwordTextField.resignFirstResponder()
-        return true
     }
-    
 }
