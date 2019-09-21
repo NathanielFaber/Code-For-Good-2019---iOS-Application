@@ -24,8 +24,15 @@ class AdminViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func setButtonPress(_ sender: Any) {
-        let defaults = UserDefaults.standard
-        defaults.set(parentPasswordTextField.text, forKey: "parentPassword")
+        //let defaults = UserDefaults.standard
+        //defaults.set(parentPasswordTextField.text, forKey: "parentPassword")
+        let localHost = UserDefaults.standard.string(forKey: "localhost")
+        let url = URL(string: localHost! + "/parentpassword/change/" + parentPasswordTextField.text!)!
+        let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
+            guard let data = data else { return }
+            print(String(data: data, encoding: .utf8)!)
+        }
+        task.resume()
         parentPasswordTextField.placeholder = parentPasswordTextField.text
         let banner = NotificationBanner(title: "Parent Password Updated", subtitle: nil, style: .success)
         banner.show()
